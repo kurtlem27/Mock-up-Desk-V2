@@ -1,0 +1,62 @@
+.top-nav-dropdown{position:relative;display:flex;align-items:center;height:100%}
+.top-nav-dropdown>.top-nav-link{display:flex;align-items:center;height:100%}
+.top-nav-menu{display:none;position:absolute;top:calc(100% - 1px);left:0;z-index:20;min-width:150px;padding:7px;background:#fff;border:1px solid #ead8e3;border-radius:0 0 8px 8px;box-shadow:0 10px 24px #38203220}
+.top-nav-dropdown:hover:not(.menu-dismissed) .top-nav-menu,.top-nav-dropdown:focus-within:not(.menu-dismissed) .top-nav-menu{display:grid;gap:4px}
+.top-nav-menu>button{display:block;width:100%;border:0;border-radius:5px;background:#fff;color:#72556a;text-align:left;padding:9px 11px;font-size:10px;font-weight:700;white-space:nowrap}
+.top-nav-menu>button:hover,.top-nav-menu>button.active{background:#fceaf4;color:#b5005e}
+.ats-category-tabs{display:none}
+.ats-overseas-mode{min-height:calc(100vh - 64px)}
+.ats-project-card{cursor:pointer}
+.ats-project-card:focus-within,.ats-project-card:hover{border-color:#e8a2c4;box-shadow:0 5px 15px #c3428017}
+.ats-dashboard{padding-top:0}
+.ats-dashboard>.ats-cover{margin-top:0}
+.top-nav-menu .job-category-button,.top-nav-menu .hris-module-tabs button{border:0;border-radius:5px;padding:9px 11px;background:#fff;color:#72556a;text-align:left;font-size:10px}
+.top-nav-menu .job-category-button.active,.top-nav-menu .hris-module-tabs button.active{background:#fceaf4;color:#b5005e}
+.section-brand{position:relative;z-index:1;margin:0 0 21px;color:#342b39;font-size:20px;font-weight:800;letter-spacing:-.6px}
+.sidebar-collapse-button{align-self:flex-end;width:28px;height:27px;margin:-27px 2px 17px 0;border:1px solid #efd5e3;border-radius:7px;background:#fff7fb;color:#a83772;font-size:18px;line-height:1;font-weight:700}
+.sidebar,.main-content{transition:width .22s ease,margin-left .22s ease}
+.app-shell.sidebar-collapsed .sidebar{width:0;padding:0;border:0;overflow:visible}
+.app-shell.sidebar-collapsed .sidebar>:not(.sidebar-collapse-button){visibility:hidden}
+.app-shell.sidebar-collapsed .sidebar-collapse-button{position:fixed;top:12px;left:8px;z-index:12;margin:0;box-shadow:0 2px 8px #36243620}
+.app-shell.sidebar-collapsed .main-content{margin-left:0}
+.app-shell.sidebar-collapsed .topbar{padding-left:42px}
+.ats-cover{min-height:303px;padding:0 6.5% 30px}
+.ats-cover .ats-topline{height:65px}
+.ats-cover>.eyebrow{margin:29px 0 7px;text-align:center}
+.ats-cover>h1,.ats-cover>p:not(.eyebrow){text-align:center;margin-left:auto;margin-right:auto}
+.ats-cover>p:not(.eyebrow){max-width:560px}
+#hris-view .hris-cover{display:none}
+@media(max-width:700px){.app-shell.sidebar-collapsed .topbar{padding-left:42px}}
+@media(max-width:700px){
+  .top-nav-menu{position:fixed;top:56px;left:auto;min-width:140px}
+  .section-brand{font-size:18px;margin-bottom:15px}
+  .sidebar-collapse-button{margin:-27px 0 17px}
+}
+.ats-overseas-dashboard{max-width:1320px;padding-top:0}
+.ats-overseas-search{display:grid;gap:6px;max-width:380px;margin:18px 0 10px;font-size:10px;font-weight:700;color:#6f6672}
+.ats-overseas-search input{height:37px;border:1px solid #eae5eb;border-radius:7px;padding:0 10px;font-size:11px}
+.ats-overseas-list{display:grid;gap:12px;margin-top:16px}
+.ats-overseas-candidate{padding:17px;background:#fff;border:1px solid #eeeaf0;border-radius:10px}
+.ats-overseas-candidate header{display:flex;justify-content:space-between;align-items:center}
+.ats-overseas-candidate h3{margin:0 0 4px;font-size:13px;color:#372c3a}
+.ats-overseas-candidate header p{margin:0;color:#887c89;font-size:10px}
+.ats-overseas-profile-toggle{border:1px solid #f0dbe7;border-radius:6px;background:#fff7fb;color:#a74579;padding:8px 10px;font-size:9px;font-weight:700;white-space:nowrap}
+.ats-overseas-profile-toggle:hover{background:#fceaf4}
+.ats-overseas-profile-details{margin-top:8px}
+.ats-overseas-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:15px}
+.ats-overseas-steps>section{min-width:0;padding:12px;border:1px solid #f0e8ee;border-radius:8px;background:#fffafd}
+.ats-overseas-steps h4{margin:0 0 10px;font-size:10px;color:#9f356d}
+.ats-overseas-status{display:grid;gap:5px;font-size:9px;font-weight:700;color:#706371}
+.ats-overseas-status select{height:34px;border:1px solid #eae2e9;border-radius:6px;background:#fff;padding:0 8px;font-size:10px}
+.ats-overseas-documents{display:grid;gap:6px;margin-top:10px}
+.ats-overseas-document{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:7px;background:#fff;border:1px solid #f1e8ee;border-radius:6px;font-size:9px}
+.ats-overseas-document a{color:#b33476;font-weight:700;text-align:right}
+.hris-module-wordmark{display:block;margin:0 0 9px;color:#a93673;font-size:12px;letter-spacing:.8px;text-transform:uppercase}
+#hris-view .hris-module-panel .hris-cover{display:block;margin:-35px calc(-6.5% - 0px) 24px;padding:30px 6.5%;}
+.hris-history-controls{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin:12px 0}
+.hris-history-controls>label{display:grid;gap:6px;font-size:10px;font-weight:700;color:#6f6672}
+.hris-history-controls input{height:36px;padding:0 9px;border:1px solid #eae5eb;border-radius:6px;font-size:10px}
+.hris-history-date-list{display:flex;gap:6px;flex-wrap:wrap}
+.hris-history-date-list button{border:1px solid #eedce6;border-radius:6px;background:#fff;color:#8a7483;padding:8px;font-size:9px}
+.hris-history-date-list button.active{background:#e6007e;border-color:#e6007e;color:#fff}
+@media(max-width:700px){.ats-overseas-steps{grid-template-columns:1fr}.ats-overseas-dashboard{padding:0 14px 23px}.ats-overseas-candidate header{flex-wrap:wrap}.ats-overseas-profile-toggle{margin-left:auto}.ats-overseas-document{align-items:flex-start}}

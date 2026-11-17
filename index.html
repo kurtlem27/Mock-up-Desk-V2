@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7fb" />
+    <title>Mock-up Desk | Student Recruiting Simulation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="email-marketing-builder.css" />
+    <link rel="stylesheet" href="report-outlook.css" />
+    <link rel="stylesheet" href="brand-navigation.css" />
+  </head>
+  <body>
+    <main class="auth-screen" id="auth-screen">
+      <section class="auth-card" aria-labelledby="auth-title">
+        <a class="brand auth-brand" href="#" aria-label="Mock-up Desk home"><span class="brand-mark">M</span><span>Mock-up Desk</span></a>
+        <div class="auth-copy">
+          <p class="eyebrow">STUDENT LEARNING WORKSPACE</p>
+          <h1 id="auth-title">Welcome back</h1>
+          <p id="auth-subtitle">Log in to continue exploring the recruiting simulation.</p>
+        </div>
+        <div class="auth-tabs" role="tablist" aria-label="Account options">
+          <button class="auth-tab active" id="login-tab" type="button" role="tab" aria-selected="true">Log in</button>
+          <button class="auth-tab" id="signup-tab" type="button" role="tab" aria-selected="false">Create account</button>
+        </div>
+        <form id="auth-form">
+          <label class="form-field" id="name-field" hidden>Full name<input id="account-name" type="text" autocomplete="name" placeholder="Your name" /></label>
+          <label class="form-field" id="role-field" hidden>Account type<select id="account-role"><option value="student">Student</option><option value="teacher">Teacher</option><option value="admin">Admin</option></select></label>
+          <label class="form-field" id="subject-field" hidden>Subject<input id="account-subject" type="text" list="subject-options" placeholder="e.g. Digital Marketing" autocomplete="off" /><datalist id="subject-options"></datalist></label>
+          <label class="form-field" id="teacher-code-field" hidden><span id="teacher-code-label">Teacher code</span><input id="teacher-code" type="text" autocomplete="off" placeholder="Enter the code from your teacher" /></label>
+          <label class="form-field">Email<input id="account-email" type="email" autocomplete="email" placeholder="you@school.edu" required /></label>
+          <label class="form-field">Password<input id="account-password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required /></label>
+          <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+          <button class="primary-button auth-submit" id="auth-submit" type="submit">Log in</button>
+        </form>
+        <p class="demo-disclaimer">Educational demo only. Accounts and activity are stored in this browser and are not secure. Do not use real passwords or sensitive personal information. Teacher codes group classmates; they are not access protection.</p>
+      </section>
+    </main>
+
+    <div class="app-shell" id="app-shell" hidden>
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="Mock-up Desk home"><span class="brand-mark">M</span><span>Mock-up Desk</span></a>
+        <button class="sidebar-collapse-button" type="button" aria-expanded="true" aria-label="Collapse left panel">‹</button>
+        <nav class="main-nav" aria-label="Learning workspace">
+          <button class="nav-link" data-view="quiz" type="button"><span class="nav-icon">✓</span><span id="quiz-nav-label">Quiz</span></button>
+          <button class="nav-link" data-view="learning" type="button"><span class="nav-icon">✦</span><span>Learning &amp; Development</span></button>
+        </nav>
+        <section class="navigation-control" id="navigation-control" hidden aria-label="Student navigation controls"></section>
+        <div class="sidebar-bottom">
+          <div class="help-card"><span class="help-icon">✦</span><strong>Learning mode</strong><p>Explore sample resumes and practice candidate review.</p><span class="demo-label"><span></span> DEMO DATA</span></div>
+          <div class="profile-row"><span class="avatar profile-avatar" id="user-avatar">ST</span><span class="profile-copy"><strong id="user-name">Student</strong><small>Student account</small></span><button class="profile-edit-button" id="profile-edit-button" type="button" aria-label="Edit profile">✎</button><button class="logout-button" id="logout-button" type="button">Log out</button></div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar"><div class="topbar-left"><nav class="top-nav" aria-label="Main navigation"><button class="top-nav-link" data-view="home" type="button">Home</button><button class="top-nav-link" data-view="ats" type="button">Applicant Tracking System</button><button class="top-nav-link" data-view="jobboard" type="button">Job Board</button><button class="top-nav-link" data-view="hris" type="button">HRIS</button><button class="top-nav-link" data-view="emailmarketing" type="button">Report Messaging</button><button class="top-nav-link" data-view="marketing" type="button">Email Marketing</button><button class="top-nav-link" data-view="accounts" type="button" hidden>Account management</button></nav></div><div class="topbar-actions"><span class="today-label">Student learning mode</span><span class="avatar top-avatar" id="top-avatar">ST</span></div></header>
+
+        <section class="view home-view" id="home-view" aria-label="Workspace home"></section>
+        <section class="view ats-view" id="ats-view" aria-label="Applicant tracking system"></section>
+        <section class="view ats-view" id="hris-view" aria-label="Human resources information system"></section>
+        <section class="view ats-view" id="emailmarketing-view" aria-label="Report Messaging"></section>
+        <section class="view ats-view" id="marketing-view" aria-label="Email Marketing campaigns"></section>
+        <section class="view ats-view" id="learning-view" aria-label="Learning and development"></section>
+        <section class="view ats-view" id="accounts-view" aria-label="Account management"></section>
+
+        <section class="view quiz-view" id="quiz-view" aria-label="Quiz Maker">
+          <div id="quiz-workspace"></div>
+          <section id="quiz-lock-manager" class="quiz-lock-manager" hidden aria-label="Locked quiz attempts"></section>
+        </section>
+
+        <section class="view board-view" id="jobboard-view">
+          <div class="board-banner">
+            <div class="board-topline"><a class="board-brand" href="#jobboard">Mock-up Desk</a><span class="board-demo">STUDENT RECRUITING SIMULATION</span><span class="board-student-label">Student workspace</span></div>
+            <div class="board-hero"><p class="eyebrow">RECRUITING WORKSPACE</p><h1>Discover talent with <span>potential.</span></h1><p>Source candidates, manage vacancies, and explore international recruitment opportunities.</p>
+              <form class="search-form" id="profile-search-form"><label class="search-field"><span>⌕</span><input id="profile-search" type="search" placeholder="Name, role, skill, or keyword" aria-label="Search resumes" /></label><label class="search-field location-field"><span>⌖</span><input id="profile-location" type="search" placeholder="City or location" aria-label="Filter by location" /></label><button type="submit">Search profiles <span>→</span></button></form>
+              <div class="popular-searches"><span>Popular:</span><button type="button" data-search="Design">Design</button><button type="button" data-search="Engineering">Engineering</button><button type="button" data-search="Marketing">Marketing</button><button type="button" data-search="Remote">Remote</button></div>
+            </div>
+            <svg class="recruiting-illustration" viewBox="0 0 260 190" aria-hidden="true"><rect x="72" y="20" width="145" height="150" rx="14" fill="#fff" stroke="#efd8e5" stroke-width="2"/><rect x="89" y="38" width="45" height="45" rx="13" fill="#f9dce9"/><circle cx="111" cy="54" r="10" fill="#d77ca6"/><path d="M95 77c2-11 9-16 16-16s14 5 16 16" fill="#d77ca6"/><rect x="146" y="43" width="49" height="7" rx="3.5" fill="#d94c97"/><rect x="146" y="57" width="38" height="5" rx="2.5" fill="#eadce4"/><rect x="89" y="96" width="106" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="110" width="91" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="124" width="101" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="143" width="52" height="15" rx="7" fill="#fceaf4"/><circle cx="50" cy="126" r="24" fill="#e8e1f8"/><circle cx="50" cy="119" r="8" fill="#8f7fc4"/><path d="M35 143c2-10 8-15 15-15s13 5 15 15" fill="#8f7fc4"/><circle cx="220" cy="53" r="20" fill="#f9e5c8"/><circle cx="220" cy="48" r="7" fill="#d89d55"/><path d="M207 65c2-8 7-12 13-12s11 4 13 12" fill="#d89d55"/><path d="M39 83l9-9 8 6 12-16" fill="none" stroke="#d94c97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="board-decoration decoration-one"></div><div class="board-decoration decoration-two"></div>
+          </div>
+          <div class="board-content">
+            <div class="job-category-tabs" role="group" aria-label="Job location"><button type="button" class="job-category-button active" data-job-category="local-jobs-panel">Local</button><button type="button" class="job-category-button" data-job-category="overseas-jobs-panel">Overseas</button></div>
+            <div class="job-category-panel" id="local-jobs-panel">
+            <div class="recruiting-tools" role="group" aria-label="Job board tools"><button class="tool-tab active" type="button" data-board-panel="profiles">Browse resumes <span id="profile-tab-count">50</span></button><button class="tool-tab" type="button" data-board-panel="vacancies">Vacancies <span id="vacancy-tab-count">0</span></button><button class="post-vacancy-button" id="open-vacancy-form" type="button">＋ Post a vacancy</button></div>
+            <section class="board-panel active-board-panel" id="profiles-panel">
+            <div class="board-intro"><div><p class="eyebrow">SAMPLE STUDENT RESUMES</p><h2>Meet emerging talent</h2><p>Review each profile’s experience, education, and skills.</p></div><div class="sort-wrap"><label for="profile-sort">Sort by</label><select id="profile-sort"><option value="relevant">Most relevant</option><option value="name">Name A–Z</option><option value="experience">Most experience</option></select></div></div>
+            <div class="board-layout">
+              <aside class="filter-panel" aria-label="Resume filters"><div class="filter-heading"><h3>Filters</h3><button id="clear-filters" type="button">Clear all</button></div>
+                <div class="filter-group"><h4>Career area</h4><label><input type="checkbox" name="career" value="Design" /> Design <span>3</span></label><label><input type="checkbox" name="career" value="Engineering" /> Engineering <span>3</span></label><label><input type="checkbox" name="career" value="Marketing" /> Marketing <span>2</span></label><label><input type="checkbox" name="career" value="Business" /> Business <span>2</span></label><label><input type="checkbox" name="career" value="People" /> People & HR <span>2</span></label></div>
+                <div class="filter-group"><h4>Workplace</h4><label><input type="checkbox" name="workplace" value="Remote" /> Remote <span>4</span></label><label><input type="checkbox" name="workplace" value="Hybrid" /> Hybrid <span>5</span></label><label><input type="checkbox" name="workplace" value="On-site" /> On-site <span>3</span></label></div>
+                <div class="filter-group"><h4>Experience</h4><select id="experience-filter" aria-label="Minimum years of experience"><option value="0">Any experience</option><option value="1">1+ year</option><option value="2">2+ years</option><option value="3">3+ years</option></select></div>
+                <div class="filter-note"><span>✦</span><p><strong>Practice thoughtfully</strong><br />These fictional profiles are for education only.</p></div>
+              </aside>
+              <div class="profile-results"><div class="results-heading"><strong id="results-count">12 profiles</strong><span>Sample resumes · Demo data</span></div><div id="profile-list" class="profile-list"></div><div class="no-results" id="no-results" hidden><span>⌕</span><h3>No profiles found</h3><p>Try adjusting your search or filters.</p><button id="reset-search" type="button">Clear search</button></div></div>
+            </div>
+            </section>
+            <section class="board-panel" id="vacancies-panel" hidden><div class="board-intro"><div><p class="eyebrow">HIRING WORKSPACE</p><h2>Open vacancies</h2><p>Create and manage simulated hiring positions.</p></div></div><div id="vacancy-list" class="vacancy-list"></div><div class="vacancy-empty" id="vacancy-empty"><div class="empty-illustration" aria-hidden="true"><span>＋</span><i></i><b></b></div><h3>No vacancies posted yet</h3><p>Post a position to practice managing a hiring pipeline.</p><button class="post-vacancy-button" type="button" data-open-vacancy>Post your first vacancy</button></div></section>
+            </div>
+            <section class="job-category-panel overseas-board" id="overseas-jobs-panel" hidden><div class="board-intro"><div><p class="eyebrow">INTERNATIONAL RECRUITMENT</p><h2>Overseas recruiter board</h2><p>Manage international openings, destination requirements, and candidate sourcing from an employer’s perspective.</p></div><button class="post-vacancy-button" id="open-overseas-form" type="button">＋ Post overseas role</button></div><div class="overseas-recruiter-summary"><strong id="overseas-job-count">0</strong><span>international openings</span><span>Recruiter workspace · Fictional listings</span></div><div id="overseas-job-list" class="vacancy-list"></div><h2 class="directory-title">Recruiter dashboard · applicant activity</h2><div class="teacher-table-wrap"><table class="teacher-table"><thead><tr><th>J.O. Number</th><th>Position / destination</th><th>Visibility</th><th>Applications</th><th>Applicant files</th></tr></thead><tbody id="overseas-dashboard-rows"><tr><td colspan="5" class="teacher-empty">Post an approved role to view its recruitment dashboard.</td></tr></tbody></table></div></section>
+          </div>
+          <footer class="board-footer"><span class="board-brand">Mock-up Desk</span><span>Educational simulation · Fictional candidate profiles</span><span>Resume review practice</span></footer>
+        </section>
+      </main>
+    </div>
+    <div class="modal-backdrop" id="vacancy-modal" hidden>
+      <section class="dialog vacancy-dialog" role="dialog" aria-modal="true" aria-labelledby="vacancy-modal-title"><button class="dialog-close" type="button" data-close-modal aria-label="Close">×</button><p class="eyebrow">HIRING WORKSPACE</p><h2 id="vacancy-modal-title">Post a vacancy</h2><p class="dialog-subtitle">Create a sample position for your learning workspace.</p><form id="vacancy-form"><input id="vacancy-id" type="hidden"><label class="form-field">Job title<input id="vacancy-title" type="text" required maxlength="90" placeholder="e.g. Junior UX Designer"></label><div class="form-row"><label class="form-field">Department<input id="vacancy-department" type="text" required maxlength="60" placeholder="e.g. Product & Design"></label><label class="form-field">Location<input id="vacancy-location" type="text" required maxlength="60" placeholder="e.g. Remote"></label></div><label class="form-field">Salary / compensation<input id="vacancy-salary" type="text" required maxlength="100" placeholder="e.g. PHP 25,000–30,000 / month"></label><label class="form-field">Employment type<select id="vacancy-type"><option>Full-time</option><option>Part-time</option><option>Internship</option><option>Contract</option></select></label><label class="form-field">Position details<textarea id="vacancy-description" rows="4" maxlength="1200" placeholder="Responsibilities, qualifications, or learning goals..."></textarea></label><p class="auth-message" id="vacancy-message" role="status"></p><button class="primary-button auth-submit" id="vacancy-submit" type="submit">Save vacancy</button></form></section>
+    </div>
+    <div class="modal-backdrop" id="overseas-job-modal" hidden>
+      <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="overseas-form-title"><button class="dialog-close" type="button" data-close-modal aria-label="Close">×</button><p class="eyebrow">INTERNATIONAL RECRUITMENT</p><h2 id="overseas-form-title">Post overseas role</h2><form id="overseas-job-form"><input name="id" type="hidden"><label class="form-field">Job title<input name="title" required maxlength="100" placeholder="e.g. Cleaner"></label><div class="form-row"><label class="form-field">Existing J.O. Number<select name="joNumber" required><option value="">Choose the matching Job Order</option><option value="JO-BHR-001">JO-BHR-001 · Cleaner — Bahrain</option><option value="JO-UAE-002">JO-UAE-002 · Waitress — UAE</option><option value="JO-TWN-003">JO-TWN-003 · Factory Worker — Taiwan</option><option value="JO-TWN-004">JO-TWN-004 · Teacher — Taiwan</option><option value="JO-KSA-005">JO-KSA-005 · Domestic Helper — KSA</option></select></label><label class="form-field">Visibility period<select name="visibilityMonths" required><option value="1">1 month (minimum)</option><option value="3">3 months</option><option value="6">6 months</option><option value="12">1 year</option><option value="24">2 years</option><option value="36">3 years (maximum)</option></select></label></div><input type="hidden" name="expiresAt"><div class="form-row"><label class="form-field">Employer / recruiter<input name="company" required maxlength="100"></label><label class="form-field">Destination<input name="location" required maxlength="100" placeholder="Country or city"></label></div><div class="form-row"><label class="form-field">Category<input name="category" required maxlength="60"></label><label class="form-field">Employment type<select name="type"><option>Full-time</option><option>Contract</option><option>Seasonal</option><option>Temporary</option></select></label></div><label class="form-field">Salary / compensation<input name="salary" required maxlength="100" placeholder="e.g. USD 1,800–2,200 / month"></label><label class="form-field">Role description and qualifications<textarea name="description" rows="5" required maxlength="1200"></textarea></label><label class="form-field">Recruiter notes<input name="recruiterNotes" maxlength="300" placeholder="Visa, accommodation, interview or sourcing notes"></label><button type="submit" class="primary-button">Save overseas role</button></form></section>
+    </div>
+    <div class="modal-backdrop" id="resume-modal" hidden>
+      <section class="dialog resume-dialog" role="dialog" aria-modal="true" aria-labelledby="resume-modal-name"><button class="dialog-close" type="button" data-close-modal aria-label="Close">×</button><div class="resume-modal-layout"><article class="resume-document"><div class="document-kicker"><span class="brand-mark">H</span><span>HIREFLOW · SAMPLE RESUME</span><button class="review-button" id="download-resume" type="button">Download resume</button></div><div id="resume-document-content"></div></article><aside class="review-sidebar"><p class="eyebrow">CANDIDATE REVIEW</p><h2 id="resume-modal-name">Candidate</h2><p class="review-helper">Practice making thoughtful, job-related decisions. This fictional profile is for education only.</p><div class="status-actions" role="group" aria-label="Candidate status"><button type="button" data-status="Reviewing">Reviewing</button><button type="button" data-status="Accepted">Shortlisted</button><button type="button" data-status="Rejected">Rejected</button></div><p class="current-status" id="candidate-current-status">Status: New</p><div class="notes-heading"><h3>Feedback & notes</h3><span>Saved on this device</span></div><form id="note-form"><input id="note-id" type="hidden"><label class="visually-hidden" for="note-text">Add a review note</label><textarea id="note-text" rows="4" maxlength="1000" placeholder="Add job-related feedback or notes..."></textarea><button class="primary-button" type="submit" id="note-submit">Save note</button></form><div class="audit-heading"><h3>Review history</h3><span>Audit trail</span></div><ol class="audit-list" id="audit-list"></ol></aside></div></section>
+    </div>
+    <div class="modal-backdrop" id="profile-modal" hidden>
+      <section class="dialog profile-dialog" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title"><button class="dialog-close" type="button" data-close-profile aria-label="Close">×</button><p class="eyebrow">PERSONAL WORKSPACE</p><h2 id="profile-modal-title">Edit profile</h2><form id="profile-form"><div class="profile-picture-picker" id="profile-picture-picker" role="group" aria-label="Choose a fictional profile picture"></div><input type="hidden" name="picture"><div class="form-row"><label class="form-field">Name<input name="name" required maxlength="100"></label><label class="form-field">Email<input name="email" type="email" required maxlength="160"></label></div><div class="form-row"><label class="form-field">Address<input name="address" maxlength="180"></label><label class="form-field">Contact number<input name="contact" type="tel" maxlength="40"></label></div><label class="form-field">Hobbies<input name="hobbies" maxlength="300"></label><label class="form-field">Education<textarea name="education" rows="2" maxlength="1000"></textarea></label><label class="form-field">Skills<textarea name="skills" rows="2" maxlength="1000"></textarea></label><label class="form-field">Work experience<textarea name="experience" rows="3" maxlength="1500"></textarea></label><label class="form-field">Training &amp; certificates<textarea name="training" rows="3" maxlength="1500"></textarea></label><button class="primary-button" type="submit">Save profile</button></form></section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+    <script src="email-marketing-builder.js"></script>
+    <script src="report-messaging.js"></script>
+    <script src="hris-enhancements.js"></script>
+    <script src="brand-navigation.js"></script>
+  </body>
+</html>
