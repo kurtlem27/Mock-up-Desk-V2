@@ -1,0 +1,297 @@
+/* Polished Learning Hub cards and four additional workplace learning labs. */
+.learning-hub-polished .recruitment-learning-launch-card {
+  min-height: 224px;
+  padding: 26px 76px 23px 28px;
+  border: 1px solid #efccdc;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fff 0%, #fff6fa 52%, #fceaf3 100%);
+  box-shadow: 0 12px 30px #58223a0a;
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+  animation: learning-card-enter .55s both;
+}
+.learning-hub-polished .recruitment-learning-launch-card:hover,
+.learning-hub-polished .recruitment-learning-launch-card:focus-visible {
+  transform: translateY(-5px);
+  border-color: #dc8db1;
+  box-shadow: 0 20px 42px #7d31531c;
+}
+.learning-hub-polished .recruitment-learning-launch-card:focus-visible { outline: 3px solid #aa386b; outline-offset: 3px; }
+.learning-hub-polished .recruitment-learning-launch-card .recruitment-launch-title {
+  display: block;
+  max-width: 700px;
+  margin: 18px 0 8px;
+  background: none;
+  color: #382635;
+  -webkit-text-fill-color: currentColor;
+  font-size: clamp(23px, 2.5vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.65px;
+}
+.learning-hub-polished .recruitment-learning-launch-card .recruitment-launch-description { max-width: 760px; color: #5c4b59; font-size: 16px; line-height: 1.65; }
+.learning-hub-polished .recruitment-launch-kicker { color: #8b3e63; font-size: 11px; letter-spacing: .95px; }
+.learning-card-icon { position: absolute; top: 61px; right: 27px; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #f0cfe0; border-radius: 14px; background: #fff; color: #ad3973; font-size: 21px; box-shadow: 0 7px 18px #7d315312; }
+.learning-card-meta { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 14px; color: #7a5568; font-size: 12px; font-weight: 700; text-transform: capitalize; }
+.learning-card-meta span { padding: 6px 10px; border: 1px solid #f0dce6; border-radius: 30px; background: #fff9fc; }
+.learning-hub-polished .recruitment-card-progress { top: 17px; right: 15px; }
+.learning-hub-polished .recruitment-card-progress-track { height: 94px; width: 8px; }
+.learning-hub-polished .recruitment-card-progress [data-card-progress-label] { font-size: 11px; }
+@keyframes learning-card-enter { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+.recruitment-learning-module.modern-learning-module { width: min(100%, 1320px); max-height: calc(100vh - 24px); overflow-y: auto; overscroll-behavior: contain; padding: 0 30px 32px; border: 1px solid #f0dce6; border-radius: 22px; background: #fffafd; box-shadow: 0 28px 90px #39203024; scroll-behavior: smooth; }
+.modern-learning-module .recruitment-course-content { max-width: 1160px; padding-bottom: 12px; }
+.modern-learning-module .recruitment-course-hero { min-height: 420px; margin: 0 -30px 30px; padding: clamp(34px, 6vw, 76px) clamp(24px, 6vw, 76px); }
+.modern-course-hero { position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(230px, .8fr); align-items: center; gap: 34px; background: radial-gradient(ellipse at 95% 0%, #f5d4e4 0, transparent 42%), linear-gradient(135deg, #fff5fa, #fceaf3 60%, #fffafd); }
+.modern-course-hero .recruitment-course-hero-copy { position: relative; z-index: 1; max-width: 770px; }
+.modern-course-hero h1 { max-width: 820px; margin: 0 0 14px; font-size: clamp(36px, 5vw, 58px); line-height: 1.06; letter-spacing: -1.7px; }
+.modern-course-hero .recruitment-course-subtitle { max-width: 750px; color: #614453; font-size: clamp(18px, 2vw, 22px); font-weight: 700; line-height: 1.45; }
+.modern-course-hero .recruitment-course-intro { max-width: 700px; color: #61515e; font-size: 17px; line-height: 1.72; }
+.modern-course-hero .recruitment-course-kicker { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 20px; color: #87365e; font-size: 12px; font-weight: 800; letter-spacing: 1.1px; }
+.modern-course-hero .recruitment-course-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 23px; }
+.modern-course-hero .recruitment-course-tags span { padding: 8px 12px; border: 1px solid #ebcad9; border-radius: 30px; background: #ffffffb8; color: #69475a; font-size: 13px; font-weight: 700; }
+.modern-hero-art { position: relative; display: grid; min-height: 265px; place-items: center; overflow: hidden; border: 1px solid #edcadb; border-radius: 35px 100px 35px 100px; background: linear-gradient(145deg, #fbe2ee, #fffafd 72%); box-shadow: inset 0 0 0 12px #ffffff66, 0 20px 55px #91466b12; }
+.modern-hero-orbit { position: absolute; width: 230px; height: 230px; border: 1px solid #d983aa; border-radius: 50%; box-shadow: 0 0 0 24px #fff8fb, 0 0 0 25px #edbfd2; animation: learning-orbit 18s linear infinite; }
+.modern-hero-number { position: relative; color: #a5396f; font-size: clamp(92px, 12vw, 150px); font-weight: 800; letter-spacing: -10px; text-shadow: 0 9px 35px #a43d6c20; }
+.modern-hero-label { position: absolute; bottom: 27px; color: #80576b; font-size: 10px; font-weight: 800; letter-spacing: 1.8px; }
+.modern-hero-spark { position: absolute; top: 25px; right: 28px; color: #bf4e82; font-size: 34px; animation: learning-spark 3s ease-in-out infinite; }
+@keyframes learning-orbit { to { transform: rotate(360deg); } }
+@keyframes learning-spark { 50% { transform: translateY(-6px) rotate(18deg); } }
+.learning-module-overview { display: grid; grid-template-columns: .85fr 1.15fr; gap: 34px; align-items: start; margin: 36px 0; padding: clamp(24px, 4vw, 42px); border: 1px solid #f0dce6; border-radius: 20px; background: #fff; box-shadow: 0 12px 34px #58223a08; }
+.learning-module-overview h2,.learning-lab h2 { margin: 5px 0 10px; color: #342532; font-size: clamp(24px, 3vw, 32px); line-height: 1.2; }
+.learning-module-overview p:not(.recruitment-eyebrow) { color: #6d5b68; font-size: 16px; line-height: 1.6; }
+.learning-module-overview ol { display: grid; gap: 11px; margin: 0; padding-left: 25px; color: #50424e; font-size: 16px; line-height: 1.6; }
+.learning-journey-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 13px; margin: 20px 0 30px; }
+.learning-journey-card { min-height: 150px; padding: 19px; border: 1px solid #f0dce6; border-radius: 16px; background: linear-gradient(145deg,#fff,#fff6fa); box-shadow: 0 8px 22px #58223a08; transition: transform .2s, box-shadow .2s; }
+.learning-journey-card:hover { transform: translateY(-3px); box-shadow: 0 13px 28px #58223a12; }
+.learning-journey-card>span { color: #ba4e7f; font-size: 12px; font-weight: 800; letter-spacing: 1px; }
+.learning-journey-card h3 { margin: 12px 0 7px; color: #382635; font-size: 17px; }
+.learning-journey-card p { margin: 0; color: #6a5a66; font-size: 14px; line-height: 1.55; }
+.modern-learning-module .recruitment-lesson-card { border-radius: 14px; }
+.modern-learning-module .recruitment-lesson-card summary { min-height: 76px; padding: 16px 20px; }
+.modern-learning-module .recruitment-lesson-card summary strong { font-size: 17px; line-height: 1.4; }
+.modern-learning-module .recruitment-lesson-card summary small { font-size: 11px; letter-spacing: .8px; }
+.modern-learning-module .recruitment-lesson-body { padding: 4px 24px 23px 78px; color: #50434f; font-size: 16px; line-height: 1.75; }
+.modern-learning-module .recruitment-lesson-body ul { padding-left: 21px; }
+.learning-lab { margin: 27px 0; padding: clamp(22px, 4vw, 38px); border: 1px solid #edd5e1; border-radius: 20px; background: linear-gradient(145deg,#fff,#fff7fb); box-shadow: 0 13px 34px #58223a0a; }
+.learning-lab-heading { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 23px; }
+.learning-lab-icon { display: grid; width: 48px; height: 48px; flex: 0 0 48px; place-items: center; border-radius: 15px; background: #f9e1ec; color: #a83e70; font-size: 14px; font-weight: 800; }
+.learning-lab-heading .recruitment-eyebrow { margin: 0 0 6px; }
+.learning-lab-heading h2 { margin-top: 0; }
+.learning-lab-heading p:not(.recruitment-eyebrow) { max-width: 820px; margin: 0; color: #655662; font-size: 16px; line-height: 1.65; }
+.learning-lab-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 15px; }
+.learning-lab-grid>label,.learning-check-label { display: grid; align-content: start; gap: 7px; color: #493744; font-size: 14px; font-weight: 700; }
+.learning-lab-grid input,.learning-lab-grid select,.learning-lab-grid textarea,.learning-check-label select { width: 100%; min-height: 45px; padding: 10px 12px; border: 1px solid #e6d4de; border-radius: 10px; background: #fff; color: #362b36; font-size: 15px; }
+.learning-lab-grid textarea { min-height: auto; line-height: 1.6; resize: vertical; }
+.learning-lab-grid input:focus,.learning-lab-grid select:focus,.learning-lab-grid textarea:focus,.learning-check-label select:focus { outline: 3px solid #f2c9dc; border-color: #c25a88; }
+.learning-lab-wide { grid-column: 1/-1; }
+.learning-lab-action { grid-column: 1/-1; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.learning-lab-action p { flex: 1 1 100%; margin: 4px 0 0; color: #554652; font-size: 15px; line-height: 1.65; }
+.modern-learning-module button:not(.recruitment-module-controls button) { min-height: 42px; padding: 10px 16px; border: 1px solid #9f3566; border-radius: 10px; background: linear-gradient(135deg,#ad3e73,#8c2f60); color: #fff; font-size: 14px; font-weight: 750; box-shadow: 0 5px 13px #8730551c; transition: transform .18s, box-shadow .18s, background .18s; }
+.modern-learning-module button:not(.recruitment-module-controls button):hover { transform: translateY(-1px); background: #76264f; box-shadow: 0 8px 17px #87305529; }
+.modern-learning-module button.learning-button-secondary { border-color: #e4c4d4; background: #fff; color: #743457; box-shadow: none; }
+.modern-learning-module button.learning-button-secondary:hover { background: #fff0f6; }
+.modern-learning-module button:focus-visible { outline: 3px solid #d98eb1; outline-offset: 3px; }
+.learning-checklist { display: grid; gap: 10px; }
+.learning-checklist label { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid #f0dce6; border-radius: 12px; background: #fff; color: #4f414c; font-size: 15px; line-height: 1.5; cursor: pointer; }
+.learning-checklist input { width: 18px; height: 18px; margin: 1px 0 0; accent-color: #ab3d71; }
+.learning-lab [data-workday-progress],.learning-lab [data-lead-progress] { color: #793353; font-size: 14px; font-weight: 750; }
+.learning-safety-note { margin: 19px 0 0; padding: 15px 17px; border-left: 4px solid #c36a91; border-radius: 0 10px 10px 0; background: #fff1f7; color: #614b59; font-size: 14px; line-height: 1.65; }
+.learning-complete-activity { margin-top: 16px; }
+.modern-learning-module .recruitment-industry-note { margin: 28px 0; border-radius: 14px; font-size: 15px; line-height: 1.7; }
+.modern-learning-module .recruitment-course-footer { gap: 15px; flex-wrap: wrap; padding: 19px 0 4px; font-size: 11px; }
+.modern-learning-module .recruitment-course-footer button { min-height: 42px; font-size: 13px; }
+.learning-reveal { opacity: 0; transform: translateY(22px); transition: opacity .62s ease, transform .62s cubic-bezier(.2,.7,.2,1); }
+.learning-reveal.is-revealed { opacity: 1; transform: translateY(0); }
+.modern-learning-module[hidden] { display: none !important; }
+@media(max-width:760px) {
+  .learning-hub-polished .recruitment-learning-launch-card { min-height: 200px; padding: 22px 65px 20px 20px; }
+  .learning-hub-polished .recruitment-learning-launch-card .recruitment-launch-title { margin-top: 15px; font-size: 23px; }
+  .learning-hub-polished .recruitment-learning-launch-card .recruitment-launch-description { font-size: 14px; }
+  .learning-card-icon { top: 60px; right: 17px; width: 36px; height: 36px; }
+  .modern-learning-module.recruitment-learning-module { max-height: calc(100vh - 10px); padding: 0 17px 24px; border-radius: 16px; }
+  .modern-learning-module .recruitment-course-hero { grid-template-columns: 1fr; margin: 0 -17px 22px; padding: 64px 22px 24px; }
+  .modern-course-hero h1 { font-size: clamp(34px, 10vw, 48px); }
+  .modern-course-hero .recruitment-course-intro { font-size: 15px; }
+  .modern-hero-art { min-height: 180px; border-radius: 25px 60px; }
+  .modern-hero-orbit { width: 150px; height: 150px; }
+  .modern-hero-number { font-size: 95px; }
+  .learning-module-overview { grid-template-columns: 1fr; gap: 12px; padding: 23px; }
+  .learning-module-overview ol { font-size: 14px; }
+  .learning-journey-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .modern-learning-module .recruitment-lesson-card summary { padding: 13px 12px; }
+  .modern-learning-module .recruitment-lesson-card summary strong { font-size: 15px; }
+  .modern-learning-module .recruitment-lesson-body { padding: 2px 15px 19px; font-size: 14px; }
+  .learning-lab-grid { grid-template-columns: 1fr; }
+  .learning-lab-wide,.learning-lab-action { grid-column: 1; }
+  .learning-lab-heading { gap: 12px; }
+  .learning-lab-icon { width: 40px; height: 40px; flex-basis: 40px; }
+}
+@media(max-width:420px) {
+  .learning-journey-grid { grid-template-columns: 1fr; }
+  .learning-card-meta { font-size: 10px; }
+  .learning-card-meta span { padding: 5px 7px; }
+  .modern-learning-module .recruitment-course-footer { align-items: flex-start; }
+  .modern-learning-module .recruitment-footer-actions { display: flex; flex-wrap: wrap; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .learning-hub-polished .recruitment-learning-launch-card,.modern-hero-orbit,.modern-hero-spark { animation: none; }
+  .learning-reveal { opacity: 1; transform: none; transition: none; }
+  .modern-learning-module button,.learning-journey-card { transition: none; }
+}
+
+/* Bring the original four courses into the same visual system as Modules 5–8. */
+.learning-hub-polished .learning-hub-legacy-module {
+  width: min(100%, 1320px);
+  max-height: calc(100vh - 24px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 30px 32px;
+  border: 1px solid #f0dce6;
+  border-radius: 22px;
+  background: #fffafd;
+  box-shadow: 0 28px 90px #39203024;
+  scroll-behavior: smooth;
+}
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-content { max-width: 1160px; padding-bottom: 12px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero {
+  min-height: 420px;
+  margin: 0 -30px 30px;
+  padding: clamp(34px, 6vw, 76px);
+  gap: 34px;
+  background: radial-gradient(ellipse at 95% 0%, #f5d4e4 0, transparent 42%), linear-gradient(135deg, #fff5fa, #fceaf3 60%, #fffafd);
+}
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero-copy { max-width: 760px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero h1 { margin: 0 0 14px; color: #342532; font-size: clamp(36px, 5vw, 58px); line-height: 1.08; letter-spacing: -1.5px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-subtitle { color: #614453; font-size: clamp(18px, 2vw, 22px); font-weight: 700; line-height: 1.45; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-intro { color: #61515e; font-size: 17px; line-height: 1.72; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-kicker { color: #87365e; font-size: 12px; font-weight: 800; letter-spacing: 1.1px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-tags span { padding: 8px 12px; border: 1px solid #ebcad9; border-radius: 30px; background: #ffffffb8; color: #69475a; font-size: 13px; font-weight: 700; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero-image { min-height: 280px; overflow: hidden; border: 1px solid #edcadb; border-radius: 32px 80px 32px 80px; box-shadow: 0 20px 55px #91466b12; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero-image img,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-objectives-image img,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-photo img,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-practice-visual img { width: 100%; height: 100%; object-fit: cover; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-objectives-panel,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-practice-panel,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-quiz-panel { border-radius: 20px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-section-heading h2,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-objectives-copy h2,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-practice-copy h2,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-quiz-panel h2 { color: #342532; font-size: clamp(25px, 3vw, 34px); line-height: 1.2; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-objectives-copy>p:not(.recruitment-eyebrow),
+.learning-hub-polished .learning-hub-legacy-module .recruitment-practice-copy>p:not(.recruitment-eyebrow),
+.learning-hub-polished .learning-hub-legacy-module .recruitment-path-grid p,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-body,
+.learning-hub-polished .learning-hub-legacy-module .recruitment-quiz-panel form label,
+.learning-hub-polished .learning-hub-legacy-module .race-compare-table,
+.learning-hub-polished .learning-hub-legacy-module .race-pathway-card ol { color: #514451; font-size: 16px; line-height: 1.75; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-card { overflow: hidden; border: 1px solid #f0dce6; border-radius: 14px; background: #fff; box-shadow: 0 8px 22px #58223a08; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-card summary { min-height: 76px; padding: 16px 20px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-card summary strong { color: #382635; font-size: 17px; line-height: 1.4; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-card summary small { font-size: 11px; letter-spacing: .8px; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-body { padding: 4px 24px 23px 78px; }
+.learning-hub-polished .learning-hub-legacy-module input:not([type=radio]):not([type=checkbox]),
+.learning-hub-polished .learning-hub-legacy-module select,
+.learning-hub-polished .learning-hub-legacy-module textarea { min-height: 44px; border-radius: 10px; color: #362b36; font-size: 15px; }
+.learning-hub-polished .learning-hub-legacy-module button:not(.recruitment-module-controls button) { min-height: 42px; padding: 10px 16px; border: 1px solid #9f3566; border-radius: 10px; background: linear-gradient(135deg, #ad3e73, #8c2f60); color: #fff; font-size: 14px; font-weight: 750; box-shadow: 0 5px 13px #8730551c; transition: transform .18s, box-shadow .18s, background .18s; }
+.learning-hub-polished .learning-hub-legacy-module button:not(.recruitment-module-controls button):hover { transform: translateY(-1px); background: #76264f; box-shadow: 0 8px 17px #87305529; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-industry-note { border-radius: 14px; font-size: 15px; line-height: 1.7; }
+.learning-hub-polished .learning-hub-legacy-module .recruitment-course-footer { flex-wrap: wrap; gap: 15px; padding: 19px 0 4px; }
+.learning-hub-polished .learning-hub-legacy-module button:focus-visible { outline: 3px solid #d98eb1; outline-offset: 3px; }
+.learning-hub-polished .learning-hub-legacy-module .learning-reveal { opacity: 0; transform: translateY(22px); transition: opacity .62s ease, transform .62s cubic-bezier(.2,.7,.2,1); }
+.learning-hub-polished .learning-hub-legacy-module .learning-reveal.is-revealed { opacity: 1; transform: translateY(0); }
+@media(max-width:760px) {
+  .learning-hub-polished .learning-hub-legacy-module { max-height: calc(100vh - 10px); padding: 0 17px 24px; border-radius: 16px; }
+  .learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero { grid-template-columns: 1fr; margin: 0 -17px 22px; padding: 64px 22px 24px; }
+  .learning-hub-polished .learning-hub-legacy-module .recruitment-course-hero h1 { font-size: clamp(34px, 10vw, 48px); }
+  .learning-hub-polished .learning-hub-legacy-module .recruitment-course-intro { font-size: 15px; }
+  .learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-card summary { padding: 13px 12px; }
+  .learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-card summary strong { font-size: 15px; }
+  .learning-hub-polished .learning-hub-legacy-module .recruitment-lesson-body { padding: 2px 15px 19px; font-size: 15px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .learning-hub-polished .learning-hub-legacy-module .learning-reveal { opacity: 1; transform: none; transition: none; }
+  .learning-hub-polished .learning-hub-legacy-module button { transition: none; }
+}
+
+/* Compact, colorful module cards with one clear progress action on every card. */
+#learning-view .learning-resource-list { gap: 7px; }
+#learning-view .recruitment-learning-launch-card {
+  position: relative;
+  display: block;
+  width: min(100%, 1000px);
+  min-height: 154px;
+  margin: 0 auto 9px;
+  padding: 17px 150px 48px 22px;
+  overflow: visible;
+  border: 1px solid #ead5e8;
+  border-radius: 16px;
+  background: linear-gradient(115deg, #fff4f8, #f2f1ff 34%, #edfbf7 67%, #fff8e9);
+  background-size: 280% 280%;
+  animation: learning-pastel-drift 18s ease-in-out infinite;
+  box-shadow: 0 8px 22px #6142670d;
+}
+#learning-view .recruitment-learning-launch-card[data-module-number="2"] { animation-delay: -4s; }
+#learning-view .recruitment-learning-launch-card[data-module-number="3"] { animation-delay: -8s; }
+#learning-view .recruitment-learning-launch-card[data-module-number="4"] { animation-delay: -12s; }
+#learning-view .recruitment-learning-launch-card[data-module-number="5"] { animation-delay: -3s; }
+#learning-view .recruitment-learning-launch-card[data-module-number="6"] { animation-delay: -7s; }
+#learning-view .recruitment-learning-launch-card[data-module-number="7"] { animation-delay: -11s; }
+#learning-view .recruitment-learning-launch-card[data-module-number="8"] { animation-delay: -15s; }
+#learning-view .recruitment-learning-launch-card .recruitment-launch-topline { display: flex; align-items: center; justify-content: flex-start; min-height: 15px; }
+#learning-view .recruitment-learning-launch-card .recruitment-launch-title {
+  display: block;
+  max-width: 900px;
+  margin: 9px 0 5px;
+  font-size: clamp(21px, 2.2vw, 27px);
+  line-height: 1.18;
+}
+#learning-view .recruitment-learning-launch-card .recruitment-launch-description { max-width: 850px; font-size: 14px; line-height: 1.45; }
+#learning-view .recruitment-learning-launch-card .learning-card-meta { margin-top: 8px; gap: 6px; font-size: 11px; }
+#learning-view .recruitment-learning-launch-card .learning-card-meta span { padding: 4px 8px; }
+#learning-view .recruitment-learning-launch-card .learning-card-icon { top: 16px; right: 18px; width: 34px; height: 34px; font-size: 18px; }
+#learning-view .recruitment-learning-launch-card .recruitment-teacher-progress-toggle {
+  position: absolute;
+  right: 17px;
+  bottom: 15px;
+  z-index: 2;
+  min-height: 36px;
+  margin: 0;
+  padding: 8px 15px;
+  border: 1px solid #cda7cd;
+  border-radius: 999px;
+  background: #ffffffd9;
+  color: #633e68;
+  font-size: 13px;
+  font-weight: 750;
+  box-shadow: 0 4px 12px #58355912;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+#learning-view .recruitment-learning-launch-card .recruitment-teacher-progress-toggle:hover,
+#learning-view .recruitment-learning-launch-card .recruitment-teacher-progress-toggle[aria-expanded="true"] {
+  transform: translateY(-2px);
+  border-color: #9f70a7;
+  background: #fff;
+  color: #532e5d;
+  box-shadow: 0 7px 17px #58355920;
+}
+#learning-view .recruitment-learning-launch-card .recruitment-teacher-progress-toggle:focus-visible { outline: 3px solid #b986c5; outline-offset: 3px; }
+#learning-view .recruitment-learning-launch-card .recruitment-card-progress { display: none !important; }
+#learning-view .recruitment-teacher-progress:not([hidden]) { z-index: 5000; }
+#learning-view .recruitment-teacher-progress p { margin: 10px 0 0; color: #675467; font-size: 14px; line-height: 1.55; }
+#learning-view .learning-progress-summary { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px; }
+#learning-view .learning-progress-summary b { color: #9b4c91; font-size: 24px; }
+@keyframes learning-pastel-drift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+@media(max-width:760px) {
+  #learning-view .recruitment-learning-launch-card { min-height: 150px; padding: 16px 70px 52px 17px; margin-bottom: 8px; }
+  #learning-view .recruitment-learning-launch-card .recruitment-launch-title { font-size: 21px; }
+  #learning-view .recruitment-learning-launch-card .recruitment-launch-description { font-size: 13px; }
+  #learning-view .recruitment-learning-launch-card .learning-card-icon { top: 14px; right: 14px; width: 31px; height: 31px; }
+  #learning-view .recruitment-learning-launch-card .recruitment-teacher-progress-toggle { right: 13px; bottom: 12px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #learning-view .recruitment-learning-launch-card { animation: none; }
+  #learning-view .recruitment-learning-launch-card .recruitment-teacher-progress-toggle { transition: none; }
+}

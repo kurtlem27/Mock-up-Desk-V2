@@ -1,0 +1,32 @@
+/* Left-side sourcing filters and candidate profile cards. */
+.overseas-module-content:has(.overseas-sourcing-toolbar){display:grid;grid-template-columns:minmax(235px,285px) minmax(0,1fr);gap:0 18px;align-items:start}
+.overseas-module-content:has(.overseas-sourcing-toolbar)>.overseas-section-header,.overseas-module-content:has(.overseas-sourcing-toolbar)>.overseas-compliance-note{grid-column:1/-1}
+.overseas-module-content:has(.overseas-sourcing-toolbar)>.overseas-sourcing-toolbar{grid-column:1;grid-row:2/5;position:sticky;top:78px;max-height:calc(100vh - 92px);overflow:auto;display:block;margin:0;padding:14px;border-color:#e5e8ec;border-radius:9px;background:#fff;box-shadow:0 3px 12px #20304b08}
+.overseas-sourcing-main-fields{grid-template-columns:1fr;gap:9px}
+.overseas-sourcing-main-fields>label:first-child{grid-column:auto}
+.overseas-sourcing-main-fields label{display:grid;gap:6px;color:#536176;font-size:9px;font-weight:700}
+.overseas-sourcing-main-fields input,.overseas-sourcing-main-fields select{width:100%;height:36px;border:1px solid #dfe5ed;border-radius:5px;padding:0 9px;background:#fff;color:#41516a;font-size:9px}
+.overseas-sourcing-main-fields button,.overseas-sourcing-advanced button,.overseas-sourcing-results article>button{border:0!important;border-radius:5px!important;background:#2879ad!important;color:#fff!important;font-weight:800!important}
+.overseas-sourcing-advanced{grid-template-columns:1fr;gap:9px;margin-top:12px;padding-top:12px}
+.overseas-sourcing-advanced label{color:#536176;font-size:9px}
+.overseas-sourcing-advanced select{height:34px;font-size:9px}
+.overseas-sourcing-count{grid-column:2;grid-row:2;margin:0 0 9px}
+.overseas-sourcing-results{grid-column:2;grid-row:3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px}
+.overseas-sourcing-results article.overseas-source-candidate{position:relative;grid-template-columns:38px minmax(0,1fr);padding:15px;cursor:pointer;transition:border-color .18s,box-shadow .18s}
+.overseas-sourcing-results article.overseas-source-candidate:hover,.overseas-sourcing-results article.overseas-source-candidate.selected{border-color:#2879ad;box-shadow:0 0 0 2px #2879ad18}
+.overseas-sourcing-results article.overseas-source-candidate>section{min-width:0}
+.overseas-sourcing-results article.overseas-source-candidate>button{grid-column:2;justify-self:start}
+.overseas-sourcing-results .overseas-sourcing-avatar{width:38px;height:38px;background:#ffe7f2;color:#bd0064}
+.overseas-source-contact{display:grid;gap:4px;margin:8px 0;color:#65546a;font-size:8px;overflow-wrap:anywhere}
+.overseas-source-profile-panel{position:relative;grid-column:1/-1;padding:18px;border:1px solid #e5e8ec;border-left:4px solid #2879ad;border-radius:8px;background:#fff;box-shadow:0 5px 18px #20304b0d}
+.overseas-source-profile-panel h3{margin:3px 0;color:#0d2137;font-size:17px}
+.overseas-source-profile-panel h4{margin:15px 0 5px;color:#344258;font-size:10px}
+.overseas-source-profile-panel p{color:#687589;font-size:9px;line-height:1.65}
+.overseas-source-profile-panel>button{position:absolute;top:10px;right:10px;width:28px;height:28px;border:0;border-radius:50%;background:#fceaf4;color:#a32e68;font-size:17px}
+.overseas-source-profile-panel .overseas-source-contact{grid-template-columns:repeat(2,minmax(0,1fr));font-size:9px}
+.overseas-section-header>button:not(.overseas-primary-button){background:#2879ad!important;border-color:#2879ad!important;color:#fff!important}
+.overseas-module-content:has(.overseas-sourcing-toolbar)>.overseas-compliance-note{grid-row:4;margin-top:14px}
+@media(max-width:900px){.overseas-module-content:has(.overseas-sourcing-toolbar){grid-template-columns:minmax(190px,240px) minmax(0,1fr);gap:0 12px}.overseas-sourcing-results{grid-template-columns:1fr}}
+@media(max-width:650px){.overseas-module-content:has(.overseas-sourcing-toolbar){display:block}.overseas-module-content:has(.overseas-sourcing-toolbar)>.overseas-sourcing-toolbar{position:static;margin-bottom:12px}.overseas-sourcing-count{margin:8px 0}.overseas-sourcing-results{display:grid;grid-template-columns:1fr}.overseas-source-profile-panel .overseas-source-contact{grid-template-columns:1fr}}
+/* Disabled controls stay visibly inactive without recoloring every workspace button. */
+.overseas-workspace button:disabled{cursor:not-allowed}

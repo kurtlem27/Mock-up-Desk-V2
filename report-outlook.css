@@ -56,44 +56,53 @@
 @media(max-width:700px){#emailmarketing-view{min-height:calc(100vh - 56px)}.report-outlook{min-height:calc(100vh - 56px)}.outlook-topbar{padding:0 12px}.outlook-demo-tag{margin-left:2px;font-size:7px}.outlook-commandbar{padding:0 9px;gap:5px}.outlook-commandbar button{padding:0 8px;font-size:9px}.outlook-command-hint{display:none}.outlook-layout,.outlook-layout.compose-open{grid-template-columns:48px minmax(0,1fr);min-height:calc(100vh - 165px)}.outlook-resizer{display:none!important}.outlook-folders{padding:12px 5px}.outlook-folder{justify-content:center;padding:0;font-size:0}.outlook-folder span{font-size:14px}.outlook-folder b,.outlook-folders-label{display:none}.outlook-mail-list{display:none}.outlook-layout:not(.compose-open) .outlook-mail-list{display:block;grid-column:2}.outlook-compose-area{grid-column:2;padding:8px}.outlook-compose-card{min-height:520px}.outlook-compose-heading,.outlook-compose-actions{padding-left:10px;padding-right:10px}.outlook-compose-heading small{display:none}.outlook-compose-actions{gap:4px}.outlook-compose-actions button{padding:0 8px;font-size:9px}.outlook-from-row,.outlook-address-row{margin:0 11px}.outlook-address-row>span{width:33px}.outlook-message-body{margin:0 11px}.outlook-message-body textarea{min-height:260px}.outlook-compose-footer{margin:0 11px}.outlook-disclaimer{text-align:center}.outlook-account{font-size:8px}}
 
 /* Email workspace branding and rich, expandable composer */
-#emailmarketing-view{background:#fff0f7;color:#382333}
-.report-outlook{background:linear-gradient(135deg,#fff 0%,#fff4fa 48%,#ffe0ef 100%);color:#382333}
-.outlook-topbar{background:linear-gradient(105deg,#d82d8b,#f06aa9 58%,#fff);color:#fff}
-.outlook-app-mark{color:#d82d8b}
+#emailmarketing-view{background:#eef7ff;color:#26384d}
+.report-outlook{background:linear-gradient(135deg,#fff 0%,#f1f8ff 48%,#dceeff 100%);color:#26384d}
+.outlook-topbar{background:linear-gradient(105deg,#287fbd,#69b6e8 58%,#fff);color:#fff}
+.outlook-app-mark{color:#287fbd}
 .outlook-account{color:#842052}
 .outlook-demo-tag{border-color:#ffffff88;color:#fff}
 .outlook-commandbar{background:#fff;border-color:#f2c9dc}
 .outlook-commandbar .outlook-new-message{background:linear-gradient(110deg,#d72b88,#f46cac);border-color:#d72b88}
-.outlook-commandbar .outlook-new-message:hover{background:#bf2077}
+.outlook-commandbar .outlook-new-message:hover{background:#1769a6}
 .outlook-layout{background:linear-gradient(110deg,#fff,#fff4f9)}
-.outlook-folders{background:#fff9fc;border-color:#f4d5e4}
-.outlook-folder.active,.outlook-folder:hover{background:#ffe4f1;color:#b51d70}
-.outlook-folder b,.outlook-compose-actions .outlook-send{background:#d82d8b}
-.outlook-folder b{background:#d82d8b}
-.outlook-mail-list,.outlook-compose-card{background:#fff;border-color:#f0d6e2}
-.outlook-mail-item{background:#fff0f7}
-.outlook-mail-avatar,.outlook-compose-icon{background:#ffe1f0;color:#c32279}
-.outlook-resizer:hover::after,.outlook-resizer:focus-visible::after{background:#e13d95}
-.outlook-address-row input:focus{box-shadow:inset 0 -2px #e13d95}
-.outlook-address-row button{color:#c32279}
+.outlook-folders{background:#f8fbff;border-color:#cfe3f5}
+.outlook-folder.active,.outlook-folder:hover{background:#e2f1ff;color:#236da8}
+.outlook-folder b,.outlook-compose-actions .outlook-send{background:#287fbd}
+.outlook-folder b{background:#287fbd}
+.outlook-mail-list,.outlook-compose-card{background:#fff;border-color:#d6e7f4}
+.outlook-mail-item{background:#eef7ff}
+.outlook-mail-avatar,.outlook-compose-icon{background:#e2f1ff;color:#287fbd}
+.outlook-resizer:hover::after,.outlook-resizer:focus-visible::after{background:#348ac7}
+.outlook-address-row input:focus{box-shadow:inset 0 -2px #348ac7}
+.outlook-address-row button{color:#287fbd}
 .outlook-compose-area{padding:0;background:transparent}
 .outlook-compose-card{min-height:calc(100vh - 190px);max-width:none}
 .outlook-compose-heading{height:48px}
 .outlook-compose-heading>div{margin-right:auto}
 .outlook-expand,.outlook-close{width:30px;height:30px;border:0;border-radius:5px;background:transparent;color:#83385e;font-size:18px}
-.outlook-expand:hover,.outlook-close:hover{background:#ffe6f2}
-.outlook-format-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:5px;padding:8px 15px;border-bottom:1px solid #f1dce6;background:linear-gradient(90deg,#fff,#fff3f9)}
-.outlook-format-toolbar button,.outlook-format-toolbar select,.outlook-color-tool{height:30px;min-width:30px;padding:0 8px;border:1px solid #ead4df;border-radius:4px;background:#fff;color:#503647;font:11px "Segoe UI",Arial,sans-serif}
+.outlook-expand:hover,.outlook-close:hover{background:#eaf5ff}
+.outlook-format-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:5px;padding:8px 15px;border-bottom:1px solid #dce9f5;background:linear-gradient(90deg,#fff,#eff7ff)}
+.outlook-format-toolbar button,.outlook-format-toolbar select,.outlook-color-tool{height:30px;min-width:30px;padding:0 8px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#34495e;font:11px "Segoe UI",Arial,sans-serif}
 .outlook-format-toolbar button{cursor:pointer}
-.outlook-format-toolbar button:hover,.outlook-format-toolbar select:hover{border-color:#e271aa;background:#fff5fa}
+.outlook-format-toolbar button:hover,.outlook-format-toolbar select:hover{border-color:#78b8e6;background:#f0f7ff}
 .outlook-format-toolbar select{max-width:130px}
-.outlook-color-tool{position:relative;display:grid;place-items:center;font-weight:700;color:#d82d8b;cursor:pointer}
+.outlook-color-tool{position:relative;display:grid;place-items:center;font-weight:700;color:#287fbd;cursor:pointer}
 .outlook-color-tool input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
 .outlook-rich-editor{min-height:300px;padding:18px 2px;outline:0;color:#382e37;font:12px/1.7 Arial,sans-serif;overflow:auto}
 .outlook-rich-editor:focus{box-shadow:inset 0 2px #e94c9e}
 .outlook-rich-editor table{border-collapse:collapse;margin:10px 0;min-width:300px}
-.outlook-rich-editor td,.outlook-rich-editor th{min-width:90px;padding:8px;border:1px solid #d8b9ca}
-.outlook-rich-editor .outlook-cell-selected{background:#ffe0ef;outline:2px solid #df3c94;outline-offset:-2px}
+.outlook-rich-editor td,.outlook-rich-editor th{min-width:90px;padding:8px;border:1px solid #d6e7f4}
+.outlook-rich-editor .outlook-cell-selected{background:#dceeff;outline:2px solid #df3c94;outline-offset:-2px}
+.outlook-table-tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:8px 13px;border-bottom:1px solid #dce9f5;background:#f7fbff;color:#4b6178;font-size:9px}
+.outlook-table-tools[hidden]{display:none}
+.outlook-table-tools>strong{margin-right:4px;color:#236da8;font-size:10px}
+.outlook-table-tools button,.outlook-table-tools select,.outlook-table-tools input[type=number],.outlook-fill-tool{height:28px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#34495e;padding:0 7px;font:9px "Segoe UI",Arial,sans-serif}
+.outlook-table-tools button{cursor:pointer}.outlook-table-tools button:hover{border-color:#78b8e6;background:#eef7ff}
+.outlook-table-tools label{display:flex;align-items:center;gap:4px;color:#725b6a}
+.outlook-table-tools input[type=number]{width:58px}
+.outlook-fill-tool{position:relative;display:flex;align-items:center;cursor:pointer}
+.outlook-fill-tool input{width:19px;height:19px;margin-left:4px;padding:0;border:0;background:transparent;cursor:pointer}
 .outlook-disclaimer{background:#fff4f9;color:#927184}
 .outlook-compose-area.compose-fullscreen{position:fixed;inset:0;z-index:10000;display:block!important;width:100vw;height:100vh;height:100dvh;padding:0;background:#fff}
 .outlook-compose-area.compose-fullscreen .outlook-compose-card{width:100%;height:100%;min-height:100%;max-width:none;margin:0;border:0;border-radius:0;box-shadow:none;display:flex;flex-direction:column}
@@ -101,5 +110,339 @@
 .outlook-compose-area.compose-fullscreen .outlook-compose-actions,.outlook-compose-area.compose-fullscreen .outlook-format-toolbar,.outlook-compose-area.compose-fullscreen .outlook-from-row,.outlook-compose-area.compose-fullscreen .outlook-address-row,.outlook-compose-area.compose-fullscreen .outlook-compose-footer{flex:none}
 .outlook-compose-area.compose-fullscreen .outlook-message-body{flex:1;min-height:0;display:flex;flex-direction:column}
 .outlook-compose-area.compose-fullscreen .outlook-rich-editor{flex:1;min-height:0}
+
+/* Mail folder hierarchy, module rail, and context actions */
+.outlook-folders{position:relative;min-width:0;overflow:auto;padding:8px 5px}
+.outlook-pane-tools{height:30px;display:flex;justify-content:space-between;align-items:center;padding:0 4px 6px;border-bottom:1px solid #dce9f5}
+.outlook-pane-tools button{width:27px;height:25px;border:0;border-radius:5px;background:transparent;color:#3f6f98;font-size:15px;cursor:pointer}
+.outlook-pane-tools button:hover{background:#eaf5ff}
+.outlook-module-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;padding:8px 1px}
+.outlook-module-rail button{height:28px;border:0;border-radius:5px;background:transparent;color:#806b79;font-size:13px;cursor:pointer}
+.outlook-module-rail button.active,.outlook-module-rail button:hover{background:#e2f1ff;color:#236da8}
+.outlook-folder-pane-content[hidden]{display:none}
+.outlook-folders-label{padding:12px 8px 5px;color:#9a8290;font-size:8px;font-weight:800;letter-spacing:.65px}
+.outlook-folder-node{min-width:0}
+.outlook-folder-row{position:relative;display:flex;align-items:center;min-width:0;height:31px;padding-right:6px;border-radius:5px;color:#554450}
+.outlook-folder-row.active,.outlook-folder-row:has(.outlook-folder-select:focus-visible){background:#e2f1ff;color:#236da8}
+.outlook-folder-row:hover{background:#eef7ff}
+.outlook-folder-row[draggable=true]{cursor:grab}
+.outlook-folder-chevron{width:17px;height:24px;flex:none;padding:0;border:0;background:transparent;color:#967b8b;font-size:12px;cursor:pointer}
+.outlook-folder-chevron:disabled{cursor:default}
+.outlook-folder-select{display:flex;align-items:center;gap:7px;min-width:0;flex:1;height:29px;padding:0 2px;border:0;background:transparent;color:inherit;text-align:left;font:10px "Segoe UI",Arial,sans-serif;cursor:pointer}
+.outlook-folder-icon{width:15px;flex:none;color:#3976a8;text-align:center;font-size:11px}
+.outlook-folder-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.outlook-folder-select b,.outlook-favorite-link b{margin-left:auto;padding:2px 5px;border-radius:10px;background:#4b9ad2;color:#fff;font-size:8px}
+.outlook-favorite-mark{margin:0 3px;color:#d18b19;font-size:10px}
+.outlook-folder-children{min-width:0}
+.outlook-favorite-link{display:flex;align-items:center;gap:7px;width:100%;height:29px;padding:0 9px;border:0;border-radius:5px;background:transparent;color:#554450;text-align:left;font-size:9px;cursor:pointer}
+.outlook-favorite-link>span{width:14px;color:#3976a8;text-align:center}
+.outlook-favorite-link.active,.outlook-favorite-link:hover{background:#e2f1ff;color:#236da8}
+.outlook-folder-hint{display:block;padding:2px 9px;color:#9b8b95;font-size:8px;line-height:1.5}
+.outlook-folder-edit-row{padding-top:3px;padding-bottom:3px}
+.outlook-inline-folder-input{box-sizing:border-box;width:calc(100% - 8px);height:27px;padding:0 7px;border:1px solid #4c95c8;border-radius:5px;outline:0;background:#fff;color:#30445a;font-size:10px}
+.outlook-inline-folder-input[aria-invalid="true"]{border-color:#c43d57;box-shadow:0 0 0 2px #c43d571c}
+.outlook-folder-error:not([hidden]){display:block;margin:4px 8px 2px 0;padding:5px 7px;border:1px solid #f0c2c9;border-radius:5px;background:#fff4f5;color:#a52f48;font-size:9px;line-height:1.4}
+.outlook-context-menu{position:absolute;left:9px;z-index:20;display:grid;min-width:170px;padding:5px;border:1px solid #d5e6f4;border-radius:7px;background:#fff;box-shadow:0 8px 24px #472b3a22}
+.outlook-context-menu button{padding:8px 9px;border:0;border-radius:4px;background:#fff;color:#4c3d49;text-align:left;font-size:9px;cursor:pointer}
+.outlook-context-menu button:hover:not(:disabled){background:#eef7ff;color:#236da8}
+.outlook-context-menu button:disabled{color:#b9adb5;cursor:not-allowed}
+.outlook-module-placeholder{display:grid;gap:6px;margin:10px 4px;padding:10px 8px;border-radius:6px;background:#eef7ff;color:#586d84;font-size:9px;line-height:1.45}
+.outlook-module-placeholder strong{color:#a21e64;font-size:10px}
+.outlook-mini-favorites{display:grid;justify-items:center;gap:6px;padding-top:10px}
+.outlook-mini-favorites button{width:32px;height:32px;border:0;border-radius:6px;background:transparent;color:#3976a8;font-size:14px;cursor:pointer}
+.outlook-mini-favorites button:hover{background:#e2f1ff}
+.outlook-folders.pane-collapsed{width:48px;padding-right:5px;padding-left:5px}
+.outlook-mail-item.unread{background:#f0f7ff}
+.outlook-mail-item.unread strong{color:#236da8;font-weight:800}
+.outlook-mail-item{cursor:grab}
+.outlook-folder-row[draggable=true]:active,.outlook-mail-item:active{cursor:grabbing}
+.outlook-layout{grid-template-columns:42px var(--folder-width) 6px minmax(230px,32%) minmax(280px,1fr)}
+.outlook-layout.compose-open{grid-template-columns:42px var(--folder-width) 6px minmax(220px,1fr) 6px var(--compose-width,minmax(360px,42%))}
+.outlook-layout.pane-collapsed{grid-template-columns:42px 48px 6px minmax(230px,32%) minmax(280px,1fr)}
+.outlook-layout.pane-collapsed.compose-open{grid-template-columns:42px 48px 6px minmax(220px,1fr) 6px var(--compose-width,minmax(360px,42%))}
+.outlook-reading-pane{grid-column:5;grid-row:1;min-width:0;overflow:auto;border-right:1px solid #dce9f5;background:#fff}
+.outlook-layout.compose-open>.outlook-reading-pane{display:none}
+.outlook-layout.compose-open>.outlook-mail-list{grid-column:4;grid-row:1;min-width:0;overflow:auto}
+.outlook-layout.compose-open>.outlook-compose-resizer{grid-column:5;grid-row:1}
+.outlook-layout.compose-open>.outlook-compose-area{grid-column:6;grid-row:1}
+.outlook-reading-pane>.outlook-message-reading{min-height:100%}
+.outlook-reader-empty{display:grid;justify-items:center;align-content:center;gap:9px;min-height:280px;padding:30px;color:#8d7785;text-align:center}
+.outlook-reader-empty>span{display:grid;width:45px;height:45px;place-items:center;border-radius:50%;background:#eef7ff;color:#287fbd;font-size:20px}
+.outlook-reader-empty strong{color:#40576e;font-size:12px}
+.outlook-reader-empty small{font-size:9px}
+.outlook-layout.calendar-mode{grid-template-columns:42px minmax(0,1fr)}
+.outlook-layout.calendar-mode>.outlook-reading-pane{display:none!important}
+.outlook-module-rail{grid-column:1;grid-row:1;display:grid;grid-template-columns:1fr;align-content:start;gap:5px;padding:10px 4px;border-right:1px solid #dce9f5;background:#f3f9ff}
+.outlook-module-rail button{height:32px;font-size:14px}
+.outlook-folders{grid-column:2;grid-row:1}
+@media(max-width:700px){
+  .outlook-folders{overflow:visible}
+  .outlook-folders:not(.pane-collapsed){position:relative;z-index:4;width:220px;max-height:calc(100vh - 165px);background:#f8fbff;box-shadow:4px 4px 16px #44263b20}
+  .outlook-folders:not(.pane-collapsed) .outlook-module-rail{grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;padding-top:8px}
+  .outlook-folders:not(.pane-collapsed) .outlook-module-rail button{height:28px;font-size:13px}
+  .outlook-folders:not(.pane-collapsed) .outlook-pane-tools{height:auto;padding:0 4px 6px}
+  .outlook-folders.pane-collapsed .outlook-pane-tools{justify-content:center}
+  .outlook-folders.pane-collapsed .outlook-pane-tools button[data-folder-create-root]{display:none}
+  .outlook-folder-select{font-size:9px}
+  .outlook-context-menu{left:4px;min-width:150px}
+}
 @media(max-width:700px){.outlook-compose-area.compose-fullscreen{grid-column:auto}.outlook-compose-area.compose-fullscreen .outlook-format-toolbar{padding:6px;gap:4px}.outlook-compose-area.compose-fullscreen .outlook-format-toolbar button,.outlook-compose-area.compose-fullscreen .outlook-format-toolbar select{font-size:10px}.outlook-format-toolbar select{max-width:90px}.outlook-compose-area.compose-fullscreen .outlook-compose-card{min-height:100vh}}
+.outlook-recipient-field{display:flex;align-items:center;flex-wrap:wrap;gap:4px;min-width:0;flex:1;padding:4px 0}
+.outlook-recipient-field input{flex:1 1 140px;width:100px;height:30px}
+.outlook-recipient-chip{display:inline-flex;align-items:center;gap:4px;max-width:100%;padding:4px 7px;border:1px solid #c9e0f3;border-radius:14px;background:#eef7ff;color:#753451;font-size:9px}
+.outlook-recipient-chip>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.outlook-recipient-chip button{padding:0 2px;color:#536f8c;font-size:13px;line-height:1}
+.outlook-compose-area.compose-popout{position:fixed;right:22px;bottom:18px;z-index:10000;display:block!important;width:min(760px,calc(100vw - 36px));height:min(850px,calc(100vh - 36px));padding:0;background:transparent;box-shadow:0 12px 44px #37203244}
+.outlook-compose-area.compose-popout .outlook-compose-card{display:flex;flex-direction:column;width:100%;height:100%;min-height:0;max-width:none;margin:0;border:1px solid #c9e1f4;border-radius:9px;box-shadow:0 8px 35px #40253825}
+.outlook-compose-area.compose-popout .outlook-compose-heading,.outlook-compose-area.compose-popout .outlook-compose-actions,.outlook-compose-area.compose-popout .outlook-format-toolbar,.outlook-compose-area.compose-popout .outlook-from-row,.outlook-compose-area.compose-popout .outlook-address-row,.outlook-compose-area.compose-popout .outlook-compose-footer{flex:none}
+.outlook-compose-area.compose-popout .outlook-message-body{display:flex;flex:1;min-height:0;flex-direction:column}
+.outlook-compose-area.compose-popout .outlook-rich-editor{flex:1;min-height:0}
+@media(max-width:700px){.outlook-compose-area.compose-popout{right:8px;bottom:8px;width:calc(100vw - 58px);height:calc(100vh - 90px)}}
+
+@media(max-width:700px){
+  .outlook-layout,.outlook-layout.compose-open{grid-template-columns:42px 48px minmax(0,1fr);min-height:calc(100vh - 165px)}
+  .outlook-module-rail{grid-column:1;grid-row:1}
+  .outlook-folders{grid-column:2;grid-row:1}
+  .outlook-layout:not(.compose-open) .outlook-mail-list{grid-column:3}
+  .outlook-compose-area{grid-column:3;padding:8px}
+}
+
+.outlook-table-picker-wrap{position:relative;display:inline-flex}
+.outlook-table-picker[hidden],.outlook-table-dialog[hidden]{display:none!important}
+.outlook-table-picker{position:absolute;top:calc(100% + 5px);left:0;z-index:30;display:grid;gap:8px;min-width:220px;padding:11px;border:1px solid #cfe4f5;border-radius:7px;background:#fff;box-shadow:0 8px 24px #40253828}
+.outlook-table-picker>strong{min-height:14px;color:#365878;font-size:10px;font-weight:600}
+.outlook-table-picker-grid{display:grid;grid-template-columns:repeat(10,17px);gap:3px}
+.outlook-table-picker-cell{width:17px;height:17px;padding:0;border:1px solid #d3e2ee;border-radius:2px;background:#fff;cursor:pointer}
+.outlook-table-picker-cell:hover,.outlook-table-picker-cell.active{border-color:#287fbd;background:#e2f1ff}
+.outlook-table-picker>[data-table-custom-open]{justify-self:start;padding:5px 7px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#356b9b;font-size:9px;cursor:pointer}
+.outlook-table-dialog{position:fixed;inset:0;z-index:10010;display:grid;place-items:center;padding:20px;background:#2b1b273b}
+.outlook-table-dialog-card{display:grid;gap:12px;width:min(300px,100%);padding:18px;border:1px solid #cfe2f2;border-radius:9px;background:#fff;box-shadow:0 12px 36px #34223040;color:#34495e;font-size:11px}
+.outlook-table-dialog-card>strong{font-size:13px}
+.outlook-table-dialog label{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.outlook-table-dialog input{width:90px;padding:6px;border:1px solid #d6e7f4;border-radius:4px;font:11px "Segoe UI",Arial,sans-serif}
+.outlook-table-dialog-card>div{display:flex;justify-content:flex-end;gap:7px}
+.outlook-table-dialog button{padding:7px 10px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#34495e;font-size:10px;cursor:pointer}
+.outlook-table-dialog [data-table-custom-insert]{border-color:#287fbd;background:#287fbd;color:#fff}
+.outlook-rich-editor table{width:100%;table-layout:fixed;border-collapse:collapse;margin:12px 0}
+.outlook-rich-editor td,.outlook-rich-editor th{min-width:40px;padding:8px;border:1px solid #d1d1d1;vertical-align:top;word-wrap:break-word}
+
+/* Local calendar view */
+.outlook-layout.calendar-mode{grid-template-columns:42px minmax(0,1fr);}
+.outlook-layout.calendar-mode>.outlook-folders,.outlook-layout.calendar-mode>.outlook-resizer,.outlook-layout.calendar-mode>.outlook-compose-area{display:none!important}
+.outlook-layout.calendar-mode>.outlook-mail-list{grid-column:2;grid-row:1;min-width:0;border:0;background:#f8fbff}
+.outlook-calendar-view{min-width:0;padding:22px;background:#f8fbff;color:#30445a}
+.outlook-calendar-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:8px}
+.outlook-calendar-toolbar p{margin:0 0 4px;color:#3976a8;font-size:9px;font-weight:800;letter-spacing:1px}
+.outlook-calendar-toolbar h2{margin:0;color:#30445a;font-size:22px;font-weight:650}
+.outlook-calendar-controls{display:flex;align-items:center;gap:6px}
+.outlook-calendar-controls button,.outlook-calendar-form-actions button{min-height:32px;padding:0 10px;border:1px solid #d6e7f4;border-radius:5px;background:#fff;color:#40576e;font-size:10px;cursor:pointer}
+.outlook-calendar-controls button:hover,.outlook-calendar-form-actions button:hover{border-color:#6baee0;background:#eef7ff}
+.outlook-calendar-controls .outlook-calendar-new,.outlook-calendar-form-actions button[type=submit]{border-color:#287fbd;background:#287fbd;color:#fff}
+.outlook-calendar-notice{margin:0 0 13px;color:#917687;font-size:10px}
+.outlook-calendar-grid{overflow-x:auto;border:1px solid #dce9f5;border-radius:7px;background:#fff;box-shadow:0 2px 9px #482a3b0a}
+.outlook-calendar-weekdays,.outlook-calendar-days{min-width:700px;display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}
+.outlook-calendar-weekdays{border-bottom:1px solid #dce9f5;background:#f0f7ff}
+.outlook-calendar-weekdays span{padding:9px 7px;color:#967486;text-align:right;font-size:9px;font-weight:700}
+.outlook-calendar-days{grid-template-rows:repeat(6,minmax(105px,auto))}
+.outlook-calendar-day{min-width:0;min-height:105px;padding:5px;border-right:1px solid #e5eef7;border-bottom:1px solid #e5eef7;background:#fff}
+.outlook-calendar-day:nth-child(7n){border-right:0}
+.outlook-calendar-day:nth-last-child(-n+7){border-bottom:0}
+.outlook-calendar-day.outside-month{background:#f8fbff;color:#bba9b3}
+.outlook-calendar-day.today .outlook-calendar-day-number{display:grid;width:22px;height:22px;place-items:center;border-radius:50%;background:#287fbd;color:#fff}
+.outlook-calendar-day-number{display:block;width:22px;height:22px;margin:0 0 3px auto;color:#51677f;text-align:center;font-size:10px;line-height:22px}
+.outlook-calendar-event{display:grid;gap:2px;margin:3px 0;padding:5px;border-left:3px solid #287fbd;border-radius:3px;background:#eef7ff;color:#58344a;font-size:9px;overflow:hidden}
+.outlook-calendar-event>strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px}
+.outlook-calendar-event.cancelled{border-left-color:#a99aa3;background:repeating-linear-gradient(135deg,#faf5f8,#faf5f8 5px,#f3edf1 5px,#f3edf1 10px);color:#8b7e86;text-decoration:line-through}
+.outlook-calendar-event>time,.outlook-calendar-event>small{color:#866b7b;font-size:8px}
+.outlook-calendar-rsvp{display:flex;flex-wrap:wrap;gap:2px;margin-top:3px}
+.outlook-calendar-rsvp button{padding:3px 4px;border:1px solid #d6e7f4;border-radius:3px;background:#fff;color:#8b3763;font-size:7px;cursor:pointer}
+.outlook-calendar-rsvp button:hover{border-color:#287fbd;background:#e2f1ff}
+.outlook-calendar-event-form{display:grid;gap:11px;width:min(520px,100%);margin:16px auto;padding:17px;border:1px solid #d4e5f2;border-radius:9px;background:#fff;box-shadow:0 7px 24px #40253818;color:#4b6178}
+.outlook-calendar-event-form[hidden]{display:none}
+.outlook-calendar-form-heading{display:flex;align-items:center;justify-content:space-between}
+.outlook-calendar-form-heading>div{display:grid;gap:4px}.outlook-calendar-form-heading strong{font-size:14px}.outlook-calendar-form-heading span{color:#72849a;font-size:9px}
+.outlook-calendar-form-heading>button{width:28px;height:28px;border:0;border-radius:5px;background:transparent;color:#506a84;font-size:20px;cursor:pointer}
+.outlook-calendar-event-form>label,.outlook-calendar-form-row>label{display:grid;gap:5px;color:#506a84;font-size:9px;font-weight:650}
+.outlook-calendar-event-form input,.outlook-calendar-event-form textarea,.outlook-calendar-event-form select{box-sizing:border-box;width:100%;min-height:34px;padding:7px 9px;border:1px solid #d6e7f4;border-radius:5px;background:#fff;color:#30445a;font:10px "Segoe UI",Arial,sans-serif}
+.outlook-calendar-event-form textarea{resize:vertical}
+.outlook-calendar-form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.outlook-calendar-form-error{margin:0;padding:7px 9px;border-radius:4px;background:#fff0f1;color:#aa2946;font-size:9px}
+.outlook-calendar-form-actions{display:flex;justify-content:flex-end;gap:7px}
+@media(max-width:700px){.outlook-calendar-view{padding:12px 8px}.outlook-calendar-toolbar{align-items:flex-start;flex-direction:column}.outlook-calendar-toolbar h2{font-size:18px}.outlook-calendar-controls{width:100%}.outlook-calendar-controls .outlook-calendar-new{margin-left:auto}.outlook-calendar-days{grid-template-rows:repeat(6,minmax(95px,auto))}.outlook-calendar-day{min-height:95px;padding:3px}.outlook-calendar-rsvp button{font-size:7px}.outlook-calendar-form-row{grid-template-columns:1fr}}
+
+/* Pop-out window controls and internal recipient/invite tools */
+.outlook-compose-area:not(.compose-popout) .outlook-window-control{display:none}
+.outlook-window-control{width:30px;height:30px;border:0;border-radius:5px;background:transparent;color:#83385e;font-size:17px;cursor:pointer}
+.outlook-window-control:hover{background:#eaf5ff}
+.outlook-compose-area.compose-popout.compose-fullscreen{position:fixed;inset:0;right:auto;bottom:auto;z-index:10000;display:block!important;width:100vw;height:100vh;height:100dvh;padding:0;background:#fff;box-shadow:0 0 0 100vmax #24151f65}
+.outlook-compose-area.compose-popout.compose-fullscreen .outlook-compose-card{width:100%;height:100%;min-height:100%;border:0;border-radius:0}
+.outlook-compose-area.compose-popout.compose-minimized{right:22px;bottom:18px;width:min(400px,calc(100vw - 36px));height:49px;min-height:0}
+.outlook-compose-area.compose-popout.compose-minimized .outlook-compose-card{height:49px;min-height:49px}
+.outlook-compose-area.compose-popout.compose-minimized .outlook-compose-card>:not(.outlook-compose-heading){display:none!important}
+.outlook-compose-area.compose-popout.compose-minimized .outlook-compose-heading{border:0}
+.outlook-internal-recipient-select{max-width:150px;height:28px;padding:2px 5px;border:1px solid #d5e6f4;border-radius:4px;background:#fff;color:#476482;font-size:9px}
+.outlook-invite-panel{display:grid;gap:9px;margin:10px 19px;padding:12px;border:1px solid #d4e5f2;border-radius:7px;background:#f7fbff;color:#4b6178;font-size:10px}
+.outlook-invite-panel[hidden]{display:none}
+.outlook-invite-panel>label{display:grid;gap:4px;color:#506a84;font-size:9px}
+.outlook-invite-panel input{box-sizing:border-box;width:100%;height:32px;padding:6px 8px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#30445a;font:10px "Segoe UI",Arial,sans-serif}
+.outlook-invite-actions{display:flex;justify-content:flex-end;gap:7px}
+.outlook-invite-actions button{padding:7px 10px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#40576e;font-size:9px;cursor:pointer}
+.outlook-invite-actions [data-report-invite-send]{border-color:#287fbd;background:#287fbd;color:#fff}
+.outlook-invite-panel [role=alert]:not([hidden]){margin:0;color:#a52f48;font-size:9px}
+.outlook-folder-node>.outlook-folder-row>button[data-folder-select]{width:100%;height:29px;border:0;background:transparent;color:inherit;text-align:left;font-size:10px;cursor:pointer}
+.outlook-folder-tree [data-folder-input]{box-sizing:border-box;width:90%;height:27px;margin:3px 8px;padding:4px 7px;border:1px solid #4c95c8;border-radius:5px}
+@media(max-width:700px){.outlook-internal-recipient-select{max-width:112px;font-size:8px}.outlook-compose-area.compose-popout.compose-minimized{right:8px;bottom:8px;width:calc(100vw - 58px)}}
+.outlook-calendar-event.pending{border-left-style:dashed;background:repeating-linear-gradient(135deg,#fff,#fff 5px,#eff7ff 5px,#eff7ff 10px)}
+.outlook-list-heading button{padding:6px 9px;border:1px solid #d5e6f4;border-radius:5px;background:#fff;color:#236da8;font-size:10px;cursor:pointer}
+.outlook-message-reading{padding:18px 20px;color:#30445a}
+.outlook-message-reading>header{display:grid;gap:6px;padding-bottom:14px;border-bottom:1px solid #dce9f5}
+.outlook-message-reading>header strong{font-size:14px}
+.outlook-message-reading>header span,.outlook-message-reading>header small,.outlook-message-reading>header time{color:#75879b;font-size:9px}
+.outlook-message-reading-body{min-height:110px;padding:18px 0;color:#30445a;font-size:11px;line-height:1.7;overflow-wrap:anywhere}
+.outlook-message-reading>footer{padding-top:12px;border-top:1px solid #dce9f5}
+.outlook-message-reading>footer{display:flex;flex-wrap:wrap;gap:8px}
+.outlook-message-reading>footer button{padding:8px 13px;border:1px solid #287fbd;border-radius:6px;background:#fff;color:#236da8;font-size:10px;font-weight:600;cursor:pointer;transition:background .15s,border-color .15s,box-shadow .15s}
+.outlook-message-reading>footer button:hover{border-color:#1769a6;background:#f0f7ff;box-shadow:0 2px 7px #287fbd20}
+
+/* Inbox cards, conversation details, and message reading actions */
+.outlook-mail-item{position:relative;display:block;padding:0;border-left:4px solid transparent;background:#fff;cursor:default;transition:background .15s,border-color .15s}
+.outlook-mail-item:hover,.outlook-mail-item:focus-within{background:#f7fbff}
+.outlook-mail-item.unread{border-left-color:#287fbd;background:#f3f9ff}
+.outlook-mail-item.pinned{order:-1;box-shadow:inset 0 0 0 1px #f1c4da}
+.outlook-mail-open{position:relative;width:100%;min-height:88px;display:flex;align-items:flex-start;gap:10px;padding:12px 44px 12px 11px;border:0;background:transparent;color:inherit;text-align:left;cursor:pointer}
+.outlook-mail-avatar{width:34px;height:34px;font-size:12px}
+.outlook-mail-copy{min-width:0;flex:1;display:grid;gap:5px}
+.outlook-mail-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.outlook-mail-meta>strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#514451;font-size:10px;font-weight:600}
+.outlook-mail-meta time{flex:none;color:#917f8b;font-size:8px}
+.outlook-mail-subject{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#514451;font-size:10px;font-weight:600}
+.outlook-mail-item.unread .outlook-mail-meta>strong,.outlook-mail-item.unread .outlook-mail-subject{color:#1f679f;font-weight:800}
+.outlook-mail-item .outlook-mail-snippet{display:-webkit-box;overflow:hidden;color:#8b7a85;font-size:9px;line-height:1.4;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.outlook-mail-indicator,.outlook-mail-important,.outlook-thread-count,.outlook-unread-dot{position:absolute;right:11px;top:13px}
+.outlook-mail-important{right:29px;color:#c62845;font-weight:800}
+.outlook-thread-count{top:auto;right:12px;bottom:12px;min-width:16px;padding:2px 4px;border-radius:10px;background:#e7f2fc;color:#9e2865;text-align:center;font-size:8px}
+.outlook-unread-dot{top:auto;right:14px;bottom:15px;width:7px;height:7px;border-radius:50%;background:#287fbd}
+.outlook-mail-quick-actions{position:absolute;top:8px;right:7px;display:flex;gap:1px;opacity:0;transition:opacity .15s}
+.outlook-mail-item:hover .outlook-mail-quick-actions,.outlook-mail-item:focus-within .outlook-mail-quick-actions{opacity:1}
+.outlook-mail-quick-actions button{width:25px;height:25px;padding:0;border:0;border-radius:4px;background:#fff;color:#526e89;font-size:13px;cursor:pointer}
+.outlook-mail-quick-actions button:hover{background:#e2f1ff;color:#236da8}
+.outlook-reading-toolbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;flex-wrap:wrap;gap:5px;padding:8px 12px;border-bottom:1px solid #dce9f5;background:#fff;box-shadow:0 2px 5px #462a3a0a}
+.outlook-reading-toolbar button,.outlook-reading-toolbar select,.outlook-reading-toolbar label{min-height:27px;padding:4px 7px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#40576e;font-size:9px}
+.outlook-reading-toolbar button{cursor:pointer}.outlook-reading-toolbar button:hover{background:#eef7ff}
+.outlook-reading-toolbar label{display:flex;align-items:center;gap:4px}
+.outlook-reading-toolbar select{min-height:20px;padding:2px}
+.outlook-message-reading{background:#fff}
+.outlook-reading-subject{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.outlook-reading-subject h2{margin:0;color:#382b36;font-size:18px;font-weight:700}
+.outlook-category-tag{padding:3px 7px;border-radius:9px;background:#e2f1ff;color:#236da8;font-size:8px}
+.outlook-reading-sender{display:flex;align-items:center;gap:9px}
+.outlook-reading-sender>div{display:grid;gap:4px;min-width:0;flex:1}
+.outlook-reading-sender>div strong{font-size:10px}
+.outlook-reading-sender>div span,.outlook-reading-sender time{color:#75879b;font-size:9px}
+.outlook-reading-sender time{flex:none}
+.outlook-recipient-details{color:#75879b;font-size:9px}
+.outlook-recipient-details summary{cursor:pointer}
+.outlook-recipient-details p{padding:6px 9px;background:#f7fbff;line-height:1.7}
+.outlook-security-banner,.outlook-meeting-banner{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:12px 0;padding:9px 11px;border:1px solid #f0d2dd;border-radius:5px;background:#fff6f8;color:#8b4b58;font-size:9px}
+.outlook-meeting-banner{background:#f1f8ff;color:#365878}
+.outlook-meeting-banner button{padding:5px 8px;border:1px solid #d6e7f4;border-radius:4px;background:#fff;color:#236da8;font-size:8px;cursor:pointer}
+.outlook-reading-attachments{display:flex;flex-wrap:wrap;gap:7px;padding:12px 0;border-bottom:1px solid #dce9f5}
+.outlook-reading-attachments span{padding:8px 10px;border:1px solid #edd9e3;border-radius:5px;background:#f7fbff;color:#40576e;font-size:9px}
+.outlook-thread-history{display:grid;gap:5px;margin:12px 0;padding-top:12px;border-top:1px solid #dce9f5}
+.outlook-thread-history>strong{margin-bottom:3px;color:#806879;font-size:9px}
+.outlook-thread-history>button{display:flex;align-items:center;gap:8px;width:100%;padding:7px;border:1px solid #e5eef7;border-radius:5px;background:#fff;text-align:left;color:#554450;cursor:pointer}
+.outlook-thread-history .outlook-mail-avatar{width:26px;height:26px;font-size:9px}
+.outlook-thread-history>button>span:nth-child(2){min-width:0;flex:1;display:grid;gap:3px}
+.outlook-thread-history b,.outlook-thread-history small,.outlook-thread-history time{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:8px}
+.outlook-thread-history small,.outlook-thread-history time{color:#917f8b}
+.outlook-thread-history time{flex:none}
+@media(max-width:700px){.outlook-mail-quick-actions{opacity:1}.outlook-mail-open{padding-right:48px}.outlook-reading-toolbar{position:static}.outlook-reading-subject h2{font-size:15px}.outlook-message-reading{padding:14px 12px}.outlook-reading-sender time{max-width:90px;text-align:right}}
+.outlook-layout.message-open:not(.compose-open)::before{position:fixed;inset:0;z-index:10000;background:#24151f65;content:""}
+.outlook-layout.message-open:not(.compose-open)>.outlook-reading-pane{position:fixed;top:50%;left:50%;z-index:10001;display:block;width:min(920px,calc(100vw - 36px));height:min(760px,calc(100vh - 48px));height:min(760px,calc(100dvh - 48px));min-height:0;transform:translate(-50%,-50%);overflow:auto;border:1px solid #c9e1f4;border-radius:10px;background:#fff;box-shadow:0 14px 48px #24151f50}
+.outlook-reading-toolbar>[data-mail-close]{margin-left:auto;border-color:#cfe4f5;color:#3f6f98;font-size:16px;font-weight:700}
+.outlook-reading-toolbar>[data-mail-close]:hover{background:#eaf5ff}
+.outlook-mail-list{min-width:0;overflow:auto}
+.outlook-list-heading{position:sticky;top:0;z-index:2;background:#fff}
+@media(max-width:700px){
+  .outlook-layout,.outlook-layout.compose-open{grid-template-columns:42px 48px minmax(0,1fr)}
+  .outlook-layout:not(.compose-open) .outlook-mail-list{grid-column:3;grid-row:1}
+  .outlook-layout:not(.compose-open) .outlook-reading-pane{display:none}
+  .outlook-layout.message-open:not(.compose-open) .outlook-mail-list{display:none}
+  .outlook-layout.message-open:not(.compose-open) .outlook-reading-pane{display:block;grid-column:3;grid-row:1;min-height:calc(100vh - 165px)}
+  .outlook-layout.compose-open>.outlook-compose-area{grid-column:3;grid-row:1}
+  .outlook-layout.compose-open>.outlook-mail-list,.outlook-layout.compose-open>.outlook-reading-pane{display:none}
+}
+
+/* Keep reading inline until its explicit pop-out control is pressed; resize the inbox split. */
+.outlook-layout{grid-template-columns:42px var(--folder-width) 6px minmax(230px,var(--mail-list-width,32%)) 6px minmax(280px,1fr)}
+.outlook-layout.pane-collapsed{grid-template-columns:42px 48px 6px minmax(230px,var(--mail-list-width,32%)) 6px minmax(280px,1fr)}
+.outlook-layout:not(.compose-open)>.outlook-inbox-resizer{grid-column:5;grid-row:1}
+.outlook-layout:not(.compose-open)>.outlook-reading-pane{grid-column:6;grid-row:1}
+.outlook-layout.compose-open>.outlook-inbox-resizer{display:none!important}
+.outlook-layout.message-open:not(.message-popout):not(.compose-open)::before{display:none}
+.outlook-layout.message-open:not(.message-popout):not(.compose-open)>.outlook-reading-pane{position:relative;top:auto;left:auto;z-index:auto;width:auto;height:auto;min-height:0;transform:none;overflow:auto;border:0;border-right:1px solid #dce9f5;border-radius:0;box-shadow:none}
+.outlook-layout.message-popout:not(.compose-open)::before{position:fixed;inset:0;z-index:10000;display:block;background:#24151f65;content:""}
+.outlook-layout.message-popout:not(.compose-open)>.outlook-reading-pane{position:fixed;top:50%;left:50%;z-index:10001;display:block;width:min(920px,calc(100vw - 36px));height:min(760px,calc(100vh - 48px));height:min(760px,calc(100dvh - 48px));min-height:0;transform:translate(-50%,-50%);overflow:auto;border:1px solid #c9e1f4;border-radius:10px;background:#fff;box-shadow:0 14px 48px #24151f50}
+.outlook-inbox-resizer{grid-column:5;grid-row:1;cursor:col-resize;touch-action:none}
+.outlook-layout.calendar-mode{grid-template-columns:42px minmax(0,1fr)}
+.outlook-layout.calendar-mode>.outlook-inbox-resizer{display:none!important}
+@media(max-width:700px){
+  .outlook-layout,.outlook-layout.compose-open,.outlook-layout.pane-collapsed{grid-template-columns:42px 48px minmax(0,1fr)}
+  .outlook-layout:not(.compose-open) .outlook-mail-list{grid-column:3;grid-row:1}
+  .outlook-layout:not(.compose-open) .outlook-reading-pane{display:none}
+  .outlook-layout.message-open:not(.compose-open) .outlook-mail-list{display:none}
+  .outlook-layout.message-open:not(.compose-open) .outlook-reading-pane{position:relative;top:auto;left:auto;z-index:auto;display:block;grid-column:3;grid-row:1;width:auto;height:auto;min-height:calc(100vh - 165px);transform:none;overflow:auto;border:0;border-right:1px solid #dce9f5;border-radius:0;box-shadow:none}
+  .outlook-layout.message-popout:not(.compose-open)::before{position:fixed;inset:0;z-index:10000;display:block;background:#24151f65;content:""}
+     .outlook-layout.message-popout:not(.compose-open)>.outlook-reading-pane{position:fixed;top:50%;left:50%;z-index:10001;display:block;grid-column:auto;grid-row:auto;width:min(920px,calc(100vw - 24px));height:min(760px,calc(100dvh - 32px));transform:translate(-50%,-50%);border:1px solid #c9e1f4;border-radius:10px;box-shadow:0 14px 48px #24151f50}
+ }
+
+/* Styling for the active Email title bar and Ribbon markup. */
+#emailmarketing-view{padding:0!important;background:#edf6ff!important;font-family:"Segoe UI",Arial,sans-serif}
+#report-outlook{overflow:hidden;border:1px solid #d1e3f2;border-radius:0 0 10px 10px;box-shadow:0 8px 30px #54223c12}
+ .outlook-titlebar{position:relative;z-index:5;display:flex;align-items:center;gap:10px;min-height:52px;padding:7px 14px;background:linear-gradient(100deg,#287fbd,#8bcdf2 55%,#b9e7ff,#99b6e8,#73cbd6,#287fbd);background-size:300% 300%;animation:outlook-header-gradient 12s ease-in-out infinite;color:#fff}
+.outlook-title-brand{display:flex;align-items:center;gap:7px;flex:none}
+.outlook-title-brand strong{font-size:13px;letter-spacing:.2px}
+.outlook-title-mark{display:grid;width:27px;height:27px;place-items:center;border:1px solid #ffffff70;border-radius:6px;background:#ffffff24;font-size:16px;font-weight:800}
+.outlook-quick-access,.outlook-title-actions{display:flex;align-items:center;gap:4px;flex:none}
+.outlook-quick-access button,.outlook-title-actions button{display:grid;width:28px;height:28px;place-items:center;border:0;border-radius:5px;background:transparent;color:inherit;font-size:15px;cursor:pointer}
+.outlook-quick-access button:hover,.outlook-title-actions button:hover{background:#ffffff2e}
+.outlook-title-search{display:flex;align-items:center;gap:7px;width:min(440px,42vw);height:31px;margin:0 auto;padding:0 10px;border:1px solid #ffffff6b;border-radius:6px;background:#fff;color:#795267}
+.outlook-title-search>span{font-size:17px;line-height:1}
+.outlook-title-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#30445a;font:10px "Segoe UI",Arial,sans-serif}
+.outlook-title-search input::placeholder{color:#987f8e}
+.outlook-profile-avatar{display:grid;width:28px;height:28px;place-items:center;border:1px solid #ffffff80;border-radius:50%;background:#fff;color:#246b9f;font-size:9px;font-weight:800}
+.outlook-title-actions .outlook-window-close{font-size:19px}
+.outlook-ribbon{background:#fff;border-bottom:1px solid #d6e7f4;color:#4a3744}
+.outlook-ribbon-tabs{display:flex;align-items:center;gap:3px;min-height:36px;padding:0 12px;border-bottom:1px solid #e1ebf5}
+.outlook-ribbon-tab{align-self:stretch;padding:0 11px;border:0;border-bottom:2px solid transparent;background:transparent;color:#755c6c;font:10px "Segoe UI",Arial,sans-serif;cursor:pointer}
+.outlook-ribbon-tab:hover{background:#eff7ff;color:#236da8}
+.outlook-ribbon-tab.is-active{border-bottom-color:#287fbd;color:#236da8;font-weight:700}
+.outlook-ribbon-search{display:flex;align-items:center;gap:12px;margin-left:auto;padding:5px 9px;border:1px solid #dce9f5;border-radius:5px;color:#927d8a;font-size:9px;white-space:nowrap}
+.outlook-ribbon-search span{font-size:14px}
+.outlook-ribbon-content{display:flex;align-items:stretch;gap:0;min-height:72px;padding:5px 9px;overflow-x:auto}
+.outlook-ribbon-group{display:flex;align-items:center;align-content:center;gap:4px;position:relative;flex:none;padding:5px 9px 18px;border-right:1px solid #e1ebf5}
+.outlook-ribbon-group>small{position:absolute;right:0;bottom:2px;left:0;color:#927d8a;text-align:center;font-size:8px}
+.outlook-ribbon-group button{min-height:30px;padding:4px 8px;border:1px solid transparent;border-radius:5px;background:transparent;color:#594552;font:9px "Segoe UI",Arial,sans-serif;white-space:nowrap;cursor:pointer}
+.outlook-ribbon-group button:hover{border-color:#f0d3e2;background:#eff7ff;color:#236da8}
+.outlook-ribbon-group .outlook-ribbon-primary{border-color:#287fbd;background:#287fbd;color:#fff}
+.outlook-ribbon-group .outlook-ribbon-primary:hover{background:#1769a6;color:#fff}
+.outlook-ribbon-group button>span{margin-right:4px;font-size:13px}
+.outlook-ribbon-group-search{display:grid;gap:3px;min-width:145px;padding-right:5px;padding-bottom:18px}
+.outlook-ribbon-group-search label{display:grid;gap:3px;color:#677a8f;font-size:8px}
+.outlook-ribbon-group-search input{width:135px;height:26px;padding:0 7px;border:1px solid #ead8e2;border-radius:4px;font:9px "Segoe UI",Arial,sans-serif}
+ #report-outlook.window-minimized>.outlook-ribbon,#report-outlook.window-minimized>.outlook-layout,#report-outlook.window-minimized>.outlook-disclaimer{display:none!important}
+ @keyframes outlook-header-gradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+   .outlook-titlebar{background:linear-gradient(110deg,#b9e7ff 0%,#d5f1ff 26%,#dfdfff 52%,#d5f6ec 76%,#b9e7ff 100%)!important;background-size:300% 300%!important;animation:email-inbox-gradient 14s ease-in-out infinite!important;color:#244765}
+  @keyframes email-inbox-gradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  @media(prefers-reduced-motion:reduce){.outlook-titlebar{animation:none!important}}
+
+.studio-campaign-open{display:flex;align-items:center;gap:13px;min-width:0;flex:1;padding:0;border:0;border-radius:7px;background:transparent;color:inherit;text-align:left;cursor:pointer}
+.studio-campaign-open:hover .studio-campaign-copy h2{color:#516fce}
+.studio-campaign-open:focus-visible{outline:2px solid #647fda;outline-offset:3px}
+.studio-campaign-open .studio-campaign-copy{min-width:0;flex:1}
+.top-nav-link{display:inline-flex;align-items:center;gap:5px;padding:7px 8px;font-size:8px}
+.nav-item-icon{display:inline-grid;width:14px;place-items:center;flex:none;font-size:12px;line-height:1}
+.nav-item-label{font-size:8px}
+.home-nav-link>.nav-item-icon{font-size:17px}
+@media(max-width:700px){.outlook-titlebar{flex-wrap:wrap;gap:5px;padding:7px 8px}.outlook-title-brand strong{font-size:11px}.outlook-quick-access button,.outlook-title-actions button{width:25px;height:25px}.outlook-title-search{order:3;width:100%;height:29px}.outlook-title-actions{margin-left:auto}.outlook-ribbon-tabs{gap:0;padding:0 5px;overflow-x:auto}.outlook-ribbon-tab{padding:0 8px;font-size:9px}.outlook-ribbon-search{display:none}.outlook-ribbon-content{min-height:65px;padding:4px}.outlook-ribbon-group{padding-right:5px;padding-left:5px}.outlook-ribbon-group button{padding:4px 5px;font-size:8px}.outlook-ribbon-group-search{min-width:115px}.outlook-ribbon-group-search input{width:105px}.top-nav-link{gap:3px;padding:7px 5px;font-size:7px}.nav-item-icon{width:12px;font-size:10px}.nav-item-label{font-size:7px}}
 

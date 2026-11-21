@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="email-marketing-builder.css" />
     <link rel="stylesheet" href="report-outlook.css" />
     <link rel="stylesheet" href="brand-navigation.css" />
+    <link rel="stylesheet" href="overseas-jobboard.css" />
+    <link rel="stylesheet" href="overseas-jobboard-discovery.css" />
+         <link rel="stylesheet" href="local-jobboard-applicant.css" />
+    <link rel="stylesheet" href="overseas-jobboard-talent.css" />
+    <link rel="stylesheet" href="recruitment-learning.css" />
+    <link rel="stylesheet" href="learning-modules-5-8.css" />
+         <link rel="stylesheet" href="learning-module-9.css" />
+     <link rel="stylesheet" href="assessment-ui.css" />
+    <link rel="stylesheet" href="module-maker.css" />
   </head>
   <body>
     <main class="auth-screen" id="auth-screen">
       <section class="auth-card" aria-labelledby="auth-title">
-        <a class="brand auth-brand" href="#" aria-label="Mock-up Desk home"><span class="brand-mark">M</span><span>Mock-up Desk</span></a>
+        <a class="brand auth-brand" href="#" aria-label="Mock-up Desk home"><span class="brand-mark">M</span><span class="brand-copy"><span>Mock-up Desk</span><small>Simulator &amp; Learning Hub</small></span></a>
         <div class="auth-copy">
           <p class="eyebrow">STUDENT LEARNING WORKSPACE</p>
           <h1 id="auth-title">Welcome back</h1>
@@ -39,50 +48,137 @@
 
     <div class="app-shell" id="app-shell" hidden>
       <aside class="sidebar" aria-label="Main navigation">
-        <a class="brand" href="#" aria-label="Mock-up Desk home"><span class="brand-mark">M</span><span>Mock-up Desk</span></a>
-        <button class="sidebar-collapse-button" type="button" aria-expanded="true" aria-label="Collapse left panel">‹</button>
-        <nav class="main-nav" aria-label="Learning workspace">
-          <button class="nav-link" data-view="quiz" type="button"><span class="nav-icon">✓</span><span id="quiz-nav-label">Quiz</span></button>
-          <button class="nav-link" data-view="learning" type="button"><span class="nav-icon">✦</span><span>Learning &amp; Development</span></button>
+        <a class="brand" href="#" aria-label="Mock-up Desk home"><span class="brand-mark">M</span><span class="brand-copy"><span>Mock-up Desk</span><small>Simulator &amp; Learning Hub</small></span></a>
+        <div class="workspace-heading"><p class="sidebar-section-label">Learning Workspace</p><span class="workspace-fullscreen-slot" aria-label="Full screen control"></span></div>
+        <nav class="main-nav top-nav" aria-label="Learning workspace">
+          <button class="top-nav-link home-nav-link" data-view="home" type="button"><span class="nav-item-label">Home</span></button>
+          <button class="top-nav-link" data-view="learning" type="button"><span class="nav-item-label">Learning Hub</span></button>
+                     <button class="top-nav-link assessment-nav-link" data-view="assessment" type="button"><span class="nav-item-label">Assessment</span></button>
+          <div class="nav-rainbow-divider" aria-hidden="true"></div>
+                     <button class="top-nav-link" data-view="modulemaker" type="button"><span class="nav-item-label">Module Maker</span></button>
+          <button class="top-nav-link" data-view="quiz" type="button"><span class="nav-item-label" id="quiz-nav-label">Quiz Maker</span></button>
+          <div class="nav-rainbow-divider" aria-hidden="true"></div>
+          <button class="top-nav-link" data-view="jobboard" type="button"><span class="nav-item-label">Job Board</span></button>
+          <button class="top-nav-link" data-view="ats" type="button"><span class="nav-item-label">ATS</span></button>
+          <button class="top-nav-link" data-view="hris" type="button"><span class="nav-item-label">HRIS</span></button>
+          <button class="top-nav-link" data-view="emailmarketing" type="button"><span class="nav-item-label">Email</span></button>
+          <button class="top-nav-link" data-view="marketing" type="button"><span class="nav-item-label">Email Marketing</span></button>
+          <button class="top-nav-link" data-view="accounts" type="button" hidden><span class="nav-item-label">Account management</span></button>
         </nav>
-        <section class="navigation-control" id="navigation-control" hidden aria-label="Student navigation controls"></section>
         <div class="sidebar-bottom">
-          <div class="help-card"><span class="help-icon">✦</span><strong>Learning mode</strong><p>Explore sample resumes and practice candidate review.</p><span class="demo-label"><span></span> DEMO DATA</span></div>
-          <div class="profile-row"><span class="avatar profile-avatar" id="user-avatar">ST</span><span class="profile-copy"><strong id="user-name">Student</strong><small>Student account</small></span><button class="profile-edit-button" id="profile-edit-button" type="button" aria-label="Edit profile">✎</button><button class="logout-button" id="logout-button" type="button">Log out</button></div>
+          <button class="sidebar-collapse-button" type="button" aria-expanded="true" aria-label="Collapse left panel">‹</button>
+          <div class="profile-row">
+            <div class="profile-menu-wrap">
+              <button class="profile-menu-toggle" id="profile-menu-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+                <span class="avatar profile-avatar" id="user-avatar">ST</span><span class="profile-copy"><strong id="user-name">Student</strong><small>Student account</small></span><span class="profile-menu-caret" aria-hidden="true">⌄</span>
+              </button>
+              <div class="profile-menu" id="profile-menu" hidden>
+                <button class="profile-edit-button" id="profile-edit-button" type="button">Edit profile</button>
+                <button class="logout-button" id="logout-button" type="button">Log out</button>
+              </div>
+            </div>
+            <div class="sidebar-chat-actions">
+              <button class="sidebar-tools-toggle" id="sidebar-tools-toggle" type="button" aria-expanded="false" aria-controls="sidebar-tool-tray" aria-label="Open workspace tools" title="Workspace tools"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5-5L7.4 3.6l2 2-3.8 3.8-2-2L1.3 9.7a4 4 0 0 0 5 5l9.1 9.1a2.1 2.1 0 0 0 3-3l-9.1-9.1a4 4 0 0 0 5.4-5.4Z" transform="translate(2 -1) scale(.85)"/></svg><span class="tool-notification-badge" id="tool-notification-badge" hidden aria-hidden="true">0</span></button>
+              <div class="sidebar-tool-tray" id="sidebar-tool-tray" aria-hidden="true">
+                <button class="internal-chat-launcher" id="internal-chat-launcher" type="button" hidden aria-label="Open internal messages" title="Internal messages"><svg class="internal-chat-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3.1c-5.1 0-9.2 3.7-9.2 8.3 0 2.4 1.1 4.5 3 6l-.6 3.4 3.5-1.8c1 .4 2.1.6 3.3.6 5.1 0 9.2-3.7 9.2-8.3S17.1 3.1 12 3.1Z"/><path d="m6.6 14.8 4.1-4.4 2.7 2 4-3.2-4.1 4.4-2.7-2-4 3.2Z"/></svg><span class="internal-chat-badge" id="internal-chat-badge" hidden>0</span></button>
+                <button class="writer-launcher" id="writer-launcher" type="button" aria-label="Open writing tool" title="Writing tool"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 3h12l4 4v14H4z"/><path d="M16 3v5h5M7 12h10M7 16h10M7 8h5"/><path d="m15.5 18.5 4-4 1.5 1.5-4 4-2 .5z"/></svg><span class="writer-wordmark" aria-hidden="true">W</span></button>
+              </div>
+              <section class="internal-chat-panel" id="internal-chat-panel" hidden aria-label="Internal student messages"></section>
+              <section class="writer-tool-panel" id="writer-tool-panel" hidden aria-label="Writing tool">
+                <header class="writer-heading"><div><strong>Writing tool</strong><small>Drafts save in this browser</small></div><div><button type="button" data-writer-save>Save</button><button type="button" data-writer-download>Download .doc</button><button type="button" data-writer-close aria-label="Close writing tool">×</button></div></header>
+                <div class="writer-toolbar" role="toolbar" aria-label="Document formatting">
+                  <button type="button" data-writer-command="undo" title="Undo">↶</button><button type="button" data-writer-command="redo" title="Redo">↷</button><span></span>
+                  <select data-writer-block aria-label="Text style"><option value="p">Normal</option><option value="h1">Heading 1</option><option value="h2">Heading 2</option><option value="h3">Heading 3</option><option value="blockquote">Quote</option></select>
+                  <button type="button" data-writer-command="bold" title="Bold"><b>B</b></button><button type="button" data-writer-command="italic" title="Italic"><i>I</i></button><button type="button" data-writer-command="underline" title="Underline"><u>U</u></button>
+                  <button type="button" data-writer-command="insertUnorderedList" title="Bulleted list">• List</button><button type="button" data-writer-command="insertOrderedList" title="Numbered list">1. List</button>
+                  <button type="button" data-writer-command="justifyLeft" title="Align left">⇤</button><button type="button" data-writer-command="justifyCenter" title="Center">≡</button><button type="button" data-writer-command="justifyRight" title="Align right">⇥</button>
+                  <label class="writer-color-control">Text color <input type="color" data-writer-color value="#303040" aria-label="Text color"></label><button type="button" data-writer-command="removeFormat" title="Clear formatting">Clear</button>
+                </div>
+                <label class="writer-title-label">Document title<input id="writer-title" maxlength="120" value="Untitled document" aria-label="Document title"></label>
+                <article class="writer-editor" id="writer-editor" contenteditable="true" role="textbox" aria-label="Document editor" aria-multiline="true" spellcheck="true"><p>Start writing…</p></article>
+                <footer class="writer-footer"><span data-writer-status>Saved locally</span><span data-writer-word-count>0 words</span></footer>
+              </section>
+            </div>
+          </div>
         </div>
       </aside>
 
       <main class="main-content">
-        <header class="topbar"><div class="topbar-left"><nav class="top-nav" aria-label="Main navigation"><button class="top-nav-link" data-view="home" type="button">Home</button><button class="top-nav-link" data-view="ats" type="button">Applicant Tracking System</button><button class="top-nav-link" data-view="jobboard" type="button">Job Board</button><button class="top-nav-link" data-view="hris" type="button">HRIS</button><button class="top-nav-link" data-view="emailmarketing" type="button">Report Messaging</button><button class="top-nav-link" data-view="marketing" type="button">Email Marketing</button><button class="top-nav-link" data-view="accounts" type="button" hidden>Account management</button></nav></div><div class="topbar-actions"><span class="today-label">Student learning mode</span><span class="avatar top-avatar" id="top-avatar">ST</span></div></header>
-
         <section class="view home-view" id="home-view" aria-label="Workspace home"></section>
         <section class="view ats-view" id="ats-view" aria-label="Applicant tracking system"></section>
         <section class="view ats-view" id="hris-view" aria-label="Human resources information system"></section>
-        <section class="view ats-view" id="emailmarketing-view" aria-label="Report Messaging"></section>
+        <section class="view ats-view" id="emailmarketing-view" aria-label="Email"></section>
         <section class="view ats-view" id="marketing-view" aria-label="Email Marketing campaigns"></section>
-        <section class="view ats-view" id="learning-view" aria-label="Learning and development"></section>
+                 <section class="view ats-view" id="learning-view" aria-label="Learning hub"></section>
+         <section class="view module-maker-view" id="modulemaker-view" aria-label="Module Maker"></section>
         <section class="view ats-view" id="accounts-view" aria-label="Account management"></section>
 
-        <section class="view quiz-view" id="quiz-view" aria-label="Quiz Maker">
+                           <section class="view assessment-view" id="assessment-view" aria-label="Assessment">
+            <div class="assessment-page-shell">
+              <header class="assessment-page-heading"><p class="eyebrow">STUDENT &amp; TEACHER WORKSPACE</p><h1>Assessment</h1><p>Practice evaluating candidates and review submitted evaluations.</p></header>
+              <article class="assessment-launch-card">
+                <div class="assessment-card-icon" aria-hidden="true">✓</div>
+                <div class="assessment-card-copy"><p class="eyebrow">LOCAL JOB BOARD · PRACTICAL SCENARIO</p><h2>Local Applicant Evaluation</h2><p>Review two fictional Marketing applicants, record job-related notes, and update each applicant’s status.</p><div class="assessment-card-meta"><span>2 applicants · randomized per student</span><span>Screen recording requested when supported</span></div><span class="assessment-publish-status" data-assessment-status data-state="draft">Draft · not visible to students</span></div>
+                                 <div class="assessment-card-actions">
+                   <button type="button" class="assessment-card-button" data-assessment-publish hidden>Publish assessment</button>
+                   <button type="button" class="assessment-card-button assessment-submissions-button" data-assessment-submissions hidden>View submissions <span data-assessment-submission-count>0</span></button>
+                   <button type="button" class="assessment-card-button" data-assessment-open hidden>Start assessment <span aria-hidden="true">→</span></button>
+                 </div>
+                 <p class="assessment-student-notice" data-assessment-unavailable hidden>Your teacher has not published this assessment yet.</p>
+                                   <p class="assessment-student-notice" data-assessment-complete hidden>Your assessment has been submitted. Your teacher’s feedback will appear here. <strong data-assessment-score hidden></strong></p>
+
+               </article>
+               <div class="assessment-submissions-backdrop" data-assessment-submissions-window hidden>
+                 <section class="assessment-submissions-dialog" role="dialog" aria-modal="true" aria-labelledby="assessment-results-title">
+                   <button type="button" class="assessment-scenario-close" data-assessment-submissions-close aria-label="Close submissions">×</button>
+                   <section class="assessment-results-panel" data-assessment-results aria-labelledby="assessment-results-title">
+                     <div class="assessment-results-heading"><div><p class="eyebrow">TEACHER VIEW</p><h2 id="assessment-results-title">Local Applicant Evaluation submissions</h2><p>All submitted evaluations for this assessment.</p></div></div>
+                     <div class="assessment-result-list" data-assessment-result-list></div>
+                   </section>
+                 </section>
+                               </div>
+                <div class="assessment-confirm-backdrop" data-assessment-unpublish-confirm hidden>
+                  <section class="assessment-confirm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="assessment-unpublish-title" aria-describedby="assessment-unpublish-description">
+                    <span class="assessment-confirm-icon" aria-hidden="true">!</span>
+                    <h2 id="assessment-unpublish-title">Unpublish assessment?</h2>
+                    <p id="assessment-unpublish-description">Are you sure you want to unpublish this assessment? Students will no longer be able to access it.</p>
+                    <div class="assessment-confirm-actions">
+                      <button type="button" class="assessment-confirm-no" data-assessment-unpublish-no>No</button>
+                      <button type="button" class="assessment-confirm-yes" data-assessment-unpublish-yes>Yes, unpublish</button>
+                    </div>
+                  </section>
+                </div>
+             </div>
+             <div class="assessment-scenario-backdrop" data-assessment-scenario hidden>
+              <section class="assessment-scenario-dialog" role="dialog" aria-modal="true" aria-labelledby="assessment-scenario-title">
+                <button type="button" class="assessment-scenario-close" data-assessment-close aria-label="Close scenario">×</button>
+                <p class="eyebrow">LOCAL APPLICANT EVALUATION · SCENARIO</p><h2 id="assessment-scenario-title">Evaluate two Marketing applicants</h2>
+                <p class="assessment-scenario-intro">A team is hiring for a Marketing role. Review both candidates on the local Job Board. Add job-related feedback in each candidate’s notes and choose a status that reflects your evaluation.</p>
+                <div class="assessment-scenario-candidates" data-scenario-candidates></div>
+                <ol class="assessment-scenario-steps"><li>Start the assessment to open the local Job Board.</li><li>Open both assigned resumes, write a note, and select a status for each.</li><li>Submit your work. Screen recording requires browser permission and a supported browser.</li></ol>
+                <button type="button" class="assessment-start-button" data-assessment-start>Start assessment <span aria-hidden="true">→</span></button>
+              </section>
+            </div>
+          </section>
+         <section class="view quiz-view" id="quiz-view" aria-label="Quiz Maker">
           <div id="quiz-workspace"></div>
           <section id="quiz-lock-manager" class="quiz-lock-manager" hidden aria-label="Locked quiz attempts"></section>
         </section>
 
-        <section class="view board-view" id="jobboard-view">
-          <div class="board-banner">
+        <section class="view board-view" id="jobboard-view" hidden>
+          <div class="board-banner" hidden>
             <div class="board-topline"><a class="board-brand" href="#jobboard">Mock-up Desk</a><span class="board-demo">STUDENT RECRUITING SIMULATION</span><span class="board-student-label">Student workspace</span></div>
             <div class="board-hero"><p class="eyebrow">RECRUITING WORKSPACE</p><h1>Discover talent with <span>potential.</span></h1><p>Source candidates, manage vacancies, and explore international recruitment opportunities.</p>
               <form class="search-form" id="profile-search-form"><label class="search-field"><span>⌕</span><input id="profile-search" type="search" placeholder="Name, role, skill, or keyword" aria-label="Search resumes" /></label><label class="search-field location-field"><span>⌖</span><input id="profile-location" type="search" placeholder="City or location" aria-label="Filter by location" /></label><button type="submit">Search profiles <span>→</span></button></form>
               <div class="popular-searches"><span>Popular:</span><button type="button" data-search="Design">Design</button><button type="button" data-search="Engineering">Engineering</button><button type="button" data-search="Marketing">Marketing</button><button type="button" data-search="Remote">Remote</button></div>
             </div>
-            <svg class="recruiting-illustration" viewBox="0 0 260 190" aria-hidden="true"><rect x="72" y="20" width="145" height="150" rx="14" fill="#fff" stroke="#efd8e5" stroke-width="2"/><rect x="89" y="38" width="45" height="45" rx="13" fill="#f9dce9"/><circle cx="111" cy="54" r="10" fill="#d77ca6"/><path d="M95 77c2-11 9-16 16-16s14 5 16 16" fill="#d77ca6"/><rect x="146" y="43" width="49" height="7" rx="3.5" fill="#d94c97"/><rect x="146" y="57" width="38" height="5" rx="2.5" fill="#eadce4"/><rect x="89" y="96" width="106" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="110" width="91" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="124" width="101" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="143" width="52" height="15" rx="7" fill="#fceaf4"/><circle cx="50" cy="126" r="24" fill="#e8e1f8"/><circle cx="50" cy="119" r="8" fill="#8f7fc4"/><path d="M35 143c2-10 8-15 15-15s13 5 15 15" fill="#8f7fc4"/><circle cx="220" cy="53" r="20" fill="#f9e5c8"/><circle cx="220" cy="48" r="7" fill="#d89d55"/><path d="M207 65c2-8 7-12 13-12s11 4 13 12" fill="#d89d55"/><path d="M39 83l9-9 8 6 12-16" fill="none" stroke="#d94c97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="board-decoration decoration-one"></div><div class="board-decoration decoration-two"></div>
+            <svg class="recruiting-illustration" viewBox="0 0 260 190" aria-hidden="true"><rect x="72" y="20" width="145" height="150" rx="14" fill="#fff" stroke="#efd8e5" stroke-width="2"/><rect x="89" y="38" width="45" height="45" rx="13" fill="#f9dce9"/><circle cx="111" cy="54" r="10" fill="#d77ca6"/><path d="M95 77c2-11 9-16 16-16s14 5 16 16" fill="#d77ca6"/><rect x="146" y="43" width="49" height="7" rx="3.5" fill="#d94c97"/><rect x="146" y="57" width="38" height="5" rx="2.5" fill="#eadce4"/><rect x="89" y="96" width="106" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="110" width="91" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="124" width="101" height="6" rx="3" fill="#f0e8ee"/><rect x="89" y="143" width="52" height="15" rx="7" fill="#fceaf4"/><circle cx="50" cy="126" r="24" fill="#e8e1f8"/><circle cx="50" cy="119" r="8" fill="#8f7fc4"/><path d="M35 143c2-10 8-15 15-15s13 5 15 15" fill="#8f7fc4"/><circle cx="220" cy="53" r="20" fill="#f9e5c8"/><circle cx="220" cy="48" r="7" fill="#d89d55"/><path d="M207 65c2-8 7-12 13-12s11 4 13 12" fill="#d89d55"/><path d="M39 83l9-9 8 6 12-16" fill="none" stroke="#d94c97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="board-banner-icons" aria-hidden="true"><span>✦</span><span>⌕</span><span>✧</span><span>◎</span></div><div class="board-decoration decoration-one"></div><div class="board-decoration decoration-two"></div>
           </div>
           <div class="board-content">
-            <div class="job-category-tabs" role="group" aria-label="Job location"><button type="button" class="job-category-button active" data-job-category="local-jobs-panel">Local</button><button type="button" class="job-category-button" data-job-category="overseas-jobs-panel">Overseas</button></div>
-            <div class="job-category-panel" id="local-jobs-panel">
-            <div class="recruiting-tools" role="group" aria-label="Job board tools"><button class="tool-tab active" type="button" data-board-panel="profiles">Browse resumes <span id="profile-tab-count">50</span></button><button class="tool-tab" type="button" data-board-panel="vacancies">Vacancies <span id="vacancy-tab-count">0</span></button><button class="post-vacancy-button" id="open-vacancy-form" type="button">＋ Post a vacancy</button></div>
+            <div class="job-category-panel" id="local-jobs-panel" hidden>
+            <div class="recruiting-tools" role="group" aria-label="Job board tools"><button class="tool-tab active" type="button" data-board-panel="profiles">Browse resumes <span id="profile-tab-count">50</span></button><button class="tool-tab" type="button" data-board-panel="vacancies">Vacancies <span id="vacancy-tab-count">0</span></button></div>
             <section class="board-panel active-board-panel" id="profiles-panel">
-            <div class="board-intro"><div><p class="eyebrow">SAMPLE STUDENT RESUMES</p><h2>Meet emerging talent</h2><p>Review each profile’s experience, education, and skills.</p></div><div class="sort-wrap"><label for="profile-sort">Sort by</label><select id="profile-sort"><option value="relevant">Most relevant</option><option value="name">Name A–Z</option><option value="experience">Most experience</option></select></div></div>
+            <div class="board-intro"><div><p class="eyebrow">SAMPLE STUDENT RESUMES</p><h2>Meet emerging talent</h2><p>Review each profile’s experience, education, and skills.</p></div><div class="board-intro-actions"><button class="post-vacancy-button" id="open-vacancy-form" type="button">＋ Post a vacancy</button><div class="sort-wrap"><label for="profile-sort">Sort by</label><select id="profile-sort"><option value="relevant">Most relevant</option><option value="name">Name A–Z</option><option value="experience">Most experience</option></select></div></div></div>
             <div class="board-layout">
               <aside class="filter-panel" aria-label="Resume filters"><div class="filter-heading"><h3>Filters</h3><button id="clear-filters" type="button">Clear all</button></div>
                 <div class="filter-group"><h4>Career area</h4><label><input type="checkbox" name="career" value="Design" /> Design <span>3</span></label><label><input type="checkbox" name="career" value="Engineering" /> Engineering <span>3</span></label><label><input type="checkbox" name="career" value="Marketing" /> Marketing <span>2</span></label><label><input type="checkbox" name="career" value="Business" /> Business <span>2</span></label><label><input type="checkbox" name="career" value="People" /> People & HR <span>2</span></label></div>
@@ -95,7 +191,7 @@
             </section>
             <section class="board-panel" id="vacancies-panel" hidden><div class="board-intro"><div><p class="eyebrow">HIRING WORKSPACE</p><h2>Open vacancies</h2><p>Create and manage simulated hiring positions.</p></div></div><div id="vacancy-list" class="vacancy-list"></div><div class="vacancy-empty" id="vacancy-empty"><div class="empty-illustration" aria-hidden="true"><span>＋</span><i></i><b></b></div><h3>No vacancies posted yet</h3><p>Post a position to practice managing a hiring pipeline.</p><button class="post-vacancy-button" type="button" data-open-vacancy>Post your first vacancy</button></div></section>
             </div>
-            <section class="job-category-panel overseas-board" id="overseas-jobs-panel" hidden><div class="board-intro"><div><p class="eyebrow">INTERNATIONAL RECRUITMENT</p><h2>Overseas recruiter board</h2><p>Manage international openings, destination requirements, and candidate sourcing from an employer’s perspective.</p></div><button class="post-vacancy-button" id="open-overseas-form" type="button">＋ Post overseas role</button></div><div class="overseas-recruiter-summary"><strong id="overseas-job-count">0</strong><span>international openings</span><span>Recruiter workspace · Fictional listings</span></div><div id="overseas-job-list" class="vacancy-list"></div><h2 class="directory-title">Recruiter dashboard · applicant activity</h2><div class="teacher-table-wrap"><table class="teacher-table"><thead><tr><th>J.O. Number</th><th>Position / destination</th><th>Visibility</th><th>Applications</th><th>Applicant files</th></tr></thead><tbody id="overseas-dashboard-rows"><tr><td colspan="5" class="teacher-empty">Post an approved role to view its recruitment dashboard.</td></tr></tbody></table></div></section>
+            <section class="job-category-panel" id="overseas-jobs-panel" aria-label="Overseas"><button id="open-overseas-form" type="button" hidden></button></section>
           </div>
           <footer class="board-footer"><span class="board-brand">Mock-up Desk</span><span>Educational simulation · Fictional candidate profiles</span><span>Resume review practice</span></footer>
         </section>
@@ -114,10 +210,21 @@
       <section class="dialog profile-dialog" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title"><button class="dialog-close" type="button" data-close-profile aria-label="Close">×</button><p class="eyebrow">PERSONAL WORKSPACE</p><h2 id="profile-modal-title">Edit profile</h2><form id="profile-form"><div class="profile-picture-picker" id="profile-picture-picker" role="group" aria-label="Choose a fictional profile picture"></div><input type="hidden" name="picture"><div class="form-row"><label class="form-field">Name<input name="name" required maxlength="100"></label><label class="form-field">Email<input name="email" type="email" required maxlength="160"></label></div><div class="form-row"><label class="form-field">Address<input name="address" maxlength="180"></label><label class="form-field">Contact number<input name="contact" type="tel" maxlength="40"></label></div><label class="form-field">Hobbies<input name="hobbies" maxlength="300"></label><label class="form-field">Education<textarea name="education" rows="2" maxlength="1000"></textarea></label><label class="form-field">Skills<textarea name="skills" rows="2" maxlength="1000"></textarea></label><label class="form-field">Work experience<textarea name="experience" rows="3" maxlength="1500"></textarea></label><label class="form-field">Training &amp; certificates<textarea name="training" rows="3" maxlength="1500"></textarea></label><button class="primary-button" type="submit">Save profile</button></form></section>
     </div>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <button class="page-scroll-top" id="page-scroll-top" type="button" aria-label="Scroll to top" title="Scroll to top">↑</button>
     <script src="script.js"></script>
-    <script src="email-marketing-builder.js"></script>
+    <script src="local-jobboard-applicant.js"></script>
+    <script src="overseas-recruiter.js"></script>
+    <script src="email-marketing-builder.js?v=4"></script>
     <script src="report-messaging.js"></script>
     <script src="hris-enhancements.js"></script>
     <script src="brand-navigation.js"></script>
+    <script src="overseas-jobboard.js"></script>
+    <script src="recruitment-learning.js"></script>
+    
+    <script src="race-workflow-drag.js"></script>
+    <script src="learning-modules-5-8.js"></script>
+         <script src="learning-module-9.js"></script>
+     <script src="assessment-scenario.js"></script>
+     <script src="module-maker.js"></script>
   </body>
 </html>

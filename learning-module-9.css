@@ -1,0 +1,43 @@
+/* Module 9: recruitment onboarding scenario, tracker and practice activities. */
+.learning-course-9 .m9-hero{background:radial-gradient(ellipse at 95% 0%,#f6cfe2 0,transparent 42%),linear-gradient(135deg,#fff3f9,#f8e8f4 54%,#edf6ff)}
+.learning-course-9 .m9-pathway-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+.learning-course-9 .m9-pathway-grid article{padding:22px;border:1px solid #edcfdf;border-radius:16px;background:linear-gradient(145deg,#fff,#fff6fa);box-shadow:0 8px 22px #58223a08}
+.learning-course-9 .m9-pathway-grid article+article{background:linear-gradient(145deg,#fff,#f4f2ff)}
+.learning-course-9 .m9-pathway-grid article>span{color:#a23c70;font-size:11px;font-weight:800;letter-spacing:1px}
+.learning-course-9 .m9-pathway-grid h3{margin:8px 0;color:#382635;font-size:21px}
+.learning-course-9 .m9-pathway-grid p,.learning-course-9 .m9-pathway-grid li{color:#514451;font-size:14px;line-height:1.6}
+.learning-course-9 .m9-table-wrap{width:100%;margin:14px 0;overflow-x:auto;border:1px solid #ead7e2;border-radius:12px;background:#fff}
+.learning-course-9 table{width:100%;border-collapse:collapse;min-width:460px;text-align:left}
+.learning-course-9 th,.learning-course-9 td{padding:11px 13px;border-bottom:1px solid #f0e4eb;color:#514451;font-size:13px;line-height:1.5;vertical-align:top}
+.learning-course-9 th{background:#fff0f7;color:#70264d;font-size:12px;font-weight:800}
+.learning-course-9 tbody tr:last-child td{border-bottom:0}
+.learning-course-9 .m9-reference-panel{margin:14px 0;padding:0 16px;border:1px solid #edcfdf;border-radius:13px;background:#fff;overflow:hidden}
+.learning-course-9 .m9-reference-panel>summary{padding:16px 4px;color:#71324e;font-size:15px;font-weight:800;cursor:pointer}
+.learning-course-9 .m9-reference-panel[open]>summary{border-bottom:1px solid #f0e4eb}
+.learning-course-9 .m9-reference-panel .m9-table-wrap{margin:12px 0}
+.learning-course-9 .m9-practical-steps{padding-left:24px;color:#514451;font-size:14px;line-height:1.8}
+.learning-course-9 .m9-tracker-summary{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;margin:0 0 14px;color:#71324e}
+.learning-course-9 .m9-tracker-summary strong{font-size:19px}
+.learning-course-9 .m9-tracker-summary span{padding:6px 10px;border-radius:20px;background:#fff0f7;color:#773855;font-size:12px;font-weight:750}
+.learning-course-9 .m9-document-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+.learning-course-9 .m9-tracker-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}
+.learning-course-9 .m9-tracker-controls label{display:grid;gap:7px;color:#493744;font-size:13px;font-weight:750}
+.learning-course-9 .m9-tracker-controls select,.learning-course-9 .learning-lab-grid select,.learning-course-9 .learning-lab-grid input,.learning-course-9 .learning-lab-grid textarea,.learning-course-9 .m9-question select{box-sizing:border-box;width:100%;min-width:0;min-height:42px;padding:9px 11px;border:1px solid #e6d4de;border-radius:9px;background:#fff;color:#362b36;font:14px/1.5 inherit}
+.learning-course-9 .m9-choice-list{display:grid;gap:12px;margin:0 0 16px}
+.learning-course-9 .m9-choice-list fieldset{display:grid;gap:8px;margin:0;padding:14px 16px;border:1px solid #f0dce6;border-radius:12px;background:#fff}
+.learning-course-9 .m9-choice-list legend{padding:0 4px;color:#382635;font-size:14px;font-weight:750}
+.learning-course-9 .m9-choice-list label{display:flex;align-items:center;gap:9px;color:#514451;font-size:14px}
+.learning-course-9 .m9-choice-list input,.learning-course-9 .m9-document-list input,.learning-course-9 [data-m9-scenario-step]{accent-color:#a83e70}
+.learning-course-9 .m9-applicant-switch{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}
+.learning-course-9 .m9-applicant-switch button[aria-pressed="true"]{background:linear-gradient(120deg,#812959,#584093);border-color:#584093}
+.learning-course-9 .m9-scenario-content{padding:18px;border:1px solid #edcfdf;border-radius:14px;background:#fff}
+.learning-course-9 .m9-scenario-content h3{margin:0 0 7px;color:#382635;font-size:19px}
+.learning-course-9 .m9-scenario-content>p{color:#5b4a57;font-size:14px;line-height:1.6}
+.learning-course-9 .m9-scenario-content [data-m9-scenario-step]{width:18px;height:18px;flex:none;margin:1px 0 0}
+.learning-course-9 [data-m9-scenario-progress]{color:#793353;font-size:13px;font-weight:750}
+.learning-course-9 .m9-assessment-list{display:grid;gap:12px;margin-bottom:16px}
+.learning-course-9 .m9-question{display:grid;gap:8px;padding:13px 15px;border:1px solid #f0dce6;border-radius:12px;background:#fff;color:#493744;font-size:14px;font-weight:700}
+.learning-course-9 [data-m9-assessment-feedback],.learning-course-9 [data-m9-route-feedback],.learning-course-9 [data-m9-email-feedback]{color:#71324e;font-size:14px;line-height:1.6;font-weight:700}
+.learning-course-9 .recruitment-lesson-section>p a{color:#8b285f;text-underline-offset:2px}
+.learning-course-9 .recruitment-lesson-section>p{color:#514451;font-size:14px;line-height:1.7}
+@media(max-width:760px){.learning-course-9 .m9-pathway-grid,.learning-course-9 .m9-document-list,.learning-course-9 .m9-tracker-controls{grid-template-columns:1fr}.learning-course-9 .m9-applicant-switch{display:grid}.learning-course-9 .m9-applicant-switch button{text-align:left}}

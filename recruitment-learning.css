@@ -1,0 +1,134 @@
+
+/* Sidebar controls and Learning Hub modules stay clear, readable, and clickable. */
+.sidebar{overflow-y:auto}
+.sidebar-section-label{margin:0 12px 8px;color:#76566b;font-size:10px;font-weight:800;letter-spacing:.9px;text-transform:uppercase}
+.navigation-control{max-height:32vh;overflow:auto;margin:12px 2px;padding:12px;border:1px solid #efd8e4;border-radius:10px;background:#fffafd;color:#493542}
+.navigation-control h3{margin:0 0 5px;font-size:12px;color:#493542}
+.navigation-control p,.navigation-control small{display:block;margin:0 0 8px;color:#756875;font-size:10px;line-height:1.5}
+.navigation-control label{display:flex;align-items:flex-start;gap:7px;margin:8px 0;color:#493542;font-size:10px;line-height:1.4}
+.navigation-control input{flex:none;margin:1px 0 0;accent-color:#a94c78}
+.recruitment-learning-launch-card{isolation:isolate;min-height:185px;padding:25px 27px;border:1px solid #e7dce2;background:#fffafd;color:#403540;font:inherit;text-align:left;box-shadow:0 5px 16px #4933420a;transition:transform .22s,box-shadow .22s,border-color .22s;cursor:pointer}
+.recruitment-learning-launch-card:nth-of-type(4n+1),.recruitment-learning-launch-card:nth-of-type(4n+2),.recruitment-learning-launch-card:nth-of-type(4n+3),.recruitment-learning-launch-card:nth-of-type(4n){background:#fffafd}
+.recruitment-learning-launch-card:before,.recruitment-learning-launch-card:after{display:none}
+.recruitment-learning-launch-card:hover,.recruitment-learning-launch-card:focus-visible{transform:translateY(-3px);border-color:#d9b4c7;background:#fff7fb;box-shadow:0 10px 22px #49334212;outline:2px solid #e2c0d1;outline-offset:2px}
+.recruitment-launch-title{font-size:clamp(23px,3vw,31px);color:#493542;text-shadow:none}
+.recruitment-launch-description{max-width:760px;color:#62545f;font-size:13px;line-height:1.6;text-shadow:none}
+.recruitment-learning-launch-card .recruitment-launch-status,.recruitment-learning-launch-card small{color:#725e6b}
+@media(max-width:700px){.sidebar-section-label{display:none}.navigation-control{position:fixed;left:70px;bottom:10px;z-index:8;width:min(270px,calc(100vw - 82px));max-height:50vh;padding:10px;box-shadow:0 12px 30px #49334224}.navigation-control h3{font-size:11px}.navigation-control p,.navigation-control label,.navigation-control small{font-size:9px}}
+@media(max-width:650px){.recruitment-learning-launch-card{min-height:160px;margin:14px 4px;padding:20px}.recruitment-launch-title{font-size:22px}.recruitment-launch-description{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.recruitment-learning-launch-card{transition:none}}
+
+/* Learning Hub cards: soft animated fuchsia gradient with a right-edge progress rail. */
+.recruitment-learning-launch-card{
+  position:relative;
+  overflow:visible;
+  padding-right:76px;
+  border:1px solid #efcadd;
+  background:linear-gradient(125deg,#fff7fb 0%,#fdeaf4 36%,#fff0f8 68%,#fae4f0 100%);
+  background-size:240% 240%;
+  animation:learning-card-gradient 12s ease-in-out infinite;
+}
+.recruitment-learning-launch-card:nth-of-type(4n+1),
+.recruitment-learning-launch-card:nth-of-type(4n+2),
+.recruitment-learning-launch-card:nth-of-type(4n+3),
+.recruitment-learning-launch-card:nth-of-type(4n){background-image:linear-gradient(125deg,#fff7fb 0%,#fdeaf4 36%,#fff0f8 68%,#fae4f0 100%)}
+.recruitment-learning-launch-card:hover,.recruitment-learning-launch-card:focus-visible{background-color:#fff2f8;background-image:linear-gradient(125deg,#fff5fa 0%,#fbddea 42%,#fff0f8 100%)}
+.recruitment-learning-launch-card .recruitment-launch-title{color:#382635}
+.recruitment-learning-launch-card .recruitment-launch-description{color:#51404f}
+@keyframes learning-card-gradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.recruitment-card-progress{position:absolute;top:14px;right:14px;display:flex;flex-direction:column;align-items:center;gap:7px;transform:none;color:#70264d;font-size:11px;font-weight:800;z-index:1}
+.recruitment-card-progress-track{display:flex;width:9px;height:90px;align-items:flex-end;overflow:hidden;border:1px solid #e9b8ce;border-radius:99px;background:#fff9fc;box-shadow:inset 0 1px 4px #70264d12}
+.recruitment-card-progress-track [data-card-progress-fill]{display:block;width:100%;min-height:0;border-radius:99px;background:linear-gradient(180deg,#e77cb0,#ad3e78);transition:height .55s cubic-bezier(.2,.75,.25,1)}
+.recruitment-card-progress[hidden]{display:none}
+.recruitment-teacher-progress-toggle{position:relative;z-index:2;margin-top:12px;padding:8px 13px;border:1px solid #c96c98;border-radius:8px;background:#fff;color:#70264d;font:inherit;font-size:12px;font-weight:750;cursor:pointer}
+.recruitment-teacher-progress-toggle:hover,.recruitment-teacher-progress-toggle[aria-expanded="true"]{background:#762a50;color:#fff}
+.recruitment-teacher-progress-toggle[hidden]{display:none}
+.recruitment-teacher-progress[hidden]{display:none!important}
+.recruitment-learning-launch-card.is-progress-open{z-index:3000;transform:none;isolation:auto}
+.recruitment-teacher-progress:not([hidden]){position:fixed;inset:50% auto auto 50%;z-index:3000;display:block;width:min(520px,calc(100vw - 32px));max-height:min(72vh,620px);overflow:auto;padding:25px;border:1px solid #e7bed0;border-radius:16px;background:#fffafd;color:#382635;box-shadow:0 0 0 100vmax #24132180,0 20px 70px #24132145;transform:translate(-50%,-50%)}
+.recruitment-teacher-progress>strong{display:block;margin:0 42px 16px 0;color:#632246;font-size:19px}
+.recruitment-teacher-progress .recruitment-progress-close{position:absolute;top:10px;right:12px;width:34px;height:34px;border:1px solid #e7bed0;border-radius:50%;background:#fff;color:#632246;font-size:23px;line-height:1;cursor:pointer}
+.recruitment-teacher-student-list{display:grid;gap:10px}
+.recruitment-teacher-student{display:grid;gap:4px;padding:12px 14px;border:1px solid #f0d9e4;border-radius:10px;background:#fff5fa}
+.recruitment-teacher-student strong{color:#382635;font-size:13px}
+.recruitment-teacher-student span,.recruitment-teacher-student small{color:#5c4b59;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+@media(max-width:650px){.recruitment-learning-launch-card{padding-right:66px}.recruitment-card-progress{top:12px;right:12px}.recruitment-card-progress-track{height:76px}.recruitment-teacher-progress:not([hidden]){padding:20px 16px}}
+@media(prefers-reduced-motion:reduce){.recruitment-learning-launch-card{animation:none}.recruitment-card-progress-track [data-card-progress-fill]{transition:none}}
+
+/* Restore the pre-40% photo proportions for these challenge panels. */
+.race-knowledge-check-panel{background-size:100% 100%,50% 100%;background-position:center,left;background-repeat:no-repeat}
+.ats-privacy-challenge{background-size:100% 100%}
+.local-recruitment-challenge-panel{background-image:none!important}
+
+/* High-contrast Learning Hub text and controls. */
+.sidebar-section-label{color:#493542;font-size:11px}
+.nav-link{color:#493542}
+.navigation-control{color:#302532}
+.navigation-control h3,.navigation-control label{color:#302532}
+.navigation-control p,.navigation-control small{color:#594c57;font-size:11px}
+.navigation-control label{font-size:11px}
+.recruitment-learning-launch-card{color:#302532;background:linear-gradient(125deg,#fff7fb 0%,#fdeaf4 36%,#fff0f8 68%,#fae4f0 100%);background-size:240% 240%;animation:learning-card-gradient 12s ease-in-out infinite}
+.recruitment-learning-launch-card:nth-of-type(4n+1),.recruitment-learning-launch-card:nth-of-type(4n+2),.recruitment-learning-launch-card:nth-of-type(4n+3),.recruitment-learning-launch-card:nth-of-type(4n){background-image:linear-gradient(125deg,#fff7fb 0%,#fdeaf4 36%,#fff0f8 68%,#fae4f0 100%);background-size:240% 240%}
+.recruitment-learning-launch-card .recruitment-launch-title{background:linear-gradient(95deg,#8b285f,#d14591 55%,#7a387b);background-clip:text;color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:clamp(24px,3vw,32px);font-weight:800}
+.recruitment-learning-launch-card .recruitment-launch-description{color:#514451;font-size:15px;line-height:1.65}
+.recruitment-learning-launch-card .recruitment-launch-status,.recruitment-learning-launch-card small{color:#514451;font-size:12px}
+@media(prefers-reduced-motion:reduce){.recruitment-learning-launch-card{animation:none}}
+.recruitment-learning-module{color:#302532}
+.recruitment-learning-module .recruitment-course-hero h1,
+.recruitment-learning-module .recruitment-section-heading h2,
+.recruitment-learning-module .recruitment-objectives-copy h2,
+.recruitment-learning-module .recruitment-practice-copy h2,
+.recruitment-learning-module .recruitment-quiz-panel h2,
+.recruitment-learning-module .recruitment-lesson-card summary strong{color:#302532}
+.recruitment-learning-module .recruitment-course-kicker,
+.recruitment-learning-module .recruitment-eyebrow{color:#71324e}
+.recruitment-learning-module .recruitment-course-intro,
+.recruitment-learning-module .recruitment-course-subtitle,
+.recruitment-learning-module .recruitment-objectives-copy>p:not(.recruitment-eyebrow),
+.recruitment-learning-module .recruitment-practice-copy>p:not(.recruitment-eyebrow),
+.recruitment-learning-module .recruitment-path-grid p,
+.recruitment-learning-module .recruitment-lesson-body,
+.recruitment-learning-module .recruitment-quiz-panel form label,
+.recruitment-learning-module .race-compare-table,
+.recruitment-learning-module .race-pathway-card ol{color:#514451}
+.recruitment-learning-module .recruitment-course-intro,
+.recruitment-learning-module .recruitment-lesson-body,
+.recruitment-learning-module .recruitment-quiz-panel form label{font-size:13px;line-height:1.65}
+.recruitment-learning-module input:not([type=radio]):not([type=checkbox]),
+.recruitment-learning-module select,
+.recruitment-learning-module textarea{color:#302532;font-size:13px}
+.recruitment-learning-module input::placeholder,
+.recruitment-learning-module textarea::placeholder{color:#6b606b;opacity:1}
+.recruitment-learning-module button:focus-visible,
+.recruitment-learning-launch-card:focus-visible,
+.navigation-control :focus-visible{outline:3px solid #8a315b;outline-offset:3px}
+@media(max-width:650px){
+  .recruitment-learning-launch-card .recruitment-launch-description{font-size:14px}
+  .recruitment-learning-module .recruitment-course-intro,
+  .recruitment-learning-module .recruitment-lesson-body,
+  .recruitment-learning-module .recruitment-quiz-panel form label{font-size:13px}
+}
+
+/* Immersive, readable learning modules with an accessible close control. */
+.recruitment-module-controls{pointer-events:none}
+.recruitment-module-controls button{pointer-events:auto;box-shadow:0 4px 15px #402a3818}
+.recruitment-learning-module.is-fullscreen{position:fixed;inset:0;z-index:2147482999;display:block;width:100vw;max-width:none;height:100vh;height:100dvh;margin:0;padding:0 24px 32px;overflow:auto;background:#fffafd;overscroll-behavior:contain}
+.recruitment-learning-module.is-fullscreen .recruitment-module-controls{position:fixed;top:12px;right:18px;width:42px;height:42px}
+.recruitment-learning-module.is-fullscreen .recruitment-module-controls button{width:42px;height:42px;border-color:#e5ccd8;background:#fff;color:#513746;font-size:25px}
+.recruitment-section-heading{align-items:center}
+.recruitment-progress-label{justify-self:end;align-self:center;min-width:140px;padding:10px 15px;border-color:#e8cad8;background:#fff;color:#743a58;text-align:center;font-size:11px;box-shadow:0 4px 12px #74445c10}
+.recruitment-learning-module .recruitment-course-content{max-width:1160px;margin:0 auto}
+.recruitment-learning-module .recruitment-path-grid article,.recruitment-learning-module .race-pathway-card{box-shadow:0 5px 18px #74445c08}
+.recruitment-learning-module .recruitment-lesson-card summary:hover{background:#fff8fb}
+.recruitment-learning-module .recruitment-start-button,.recruitment-learning-module .recruitment-course-footer button{background:#a94f78}
+.recruitment-learning-module .recruitment-start-button:hover,.recruitment-learning-module .recruitment-course-footer button:hover{background:#873c60}
+.navigation-control{margin:10px 2px 14px;padding:12px;max-height:30vh;overflow-y:auto;border:1px solid #ead9e2;border-radius:10px;background:#fffafd;color:#493542}
+.navigation-control h3{margin:0 0 5px;color:#493542;font-size:11px}
+.navigation-control p{margin:0 0 8px;color:#655762;font-size:10px;line-height:1.45}
+.navigation-control label{display:flex;align-items:center;gap:8px;margin:7px 0;color:#403540;font-size:10px;line-height:1.35}
+.navigation-control input{flex:none;margin:0;accent-color:#a94c78}
+@media(max-width:650px){
+  .recruitment-section-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px}
+  .recruitment-progress-label{min-width:110px;padding:8px;font-size:10px}
+  .recruitment-learning-module.is-fullscreen .recruitment-module-controls{top:8px;right:8px}
+}

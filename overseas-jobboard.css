@@ -1,0 +1,209 @@
+/* Full-width overseas recruiter and applicant workspace */
+#overseas-jobs-panel{position:relative;left:50%;width:calc(100vw - var(--sidebar));max-width:none;margin:0;transform:translateX(-50%);padding:0;background:#f4f6f9;color:#263448;min-height:calc(100vh - 64px)}
+.app-shell.sidebar-collapsed #overseas-jobs-panel{width:100vw}
+.overseas-workspace{min-height:calc(100vh - 64px);background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;color:#283447}
+.overseas-identity{min-height:70px;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:10px clamp(18px,4.5vw,66px);background:#fff;border-bottom:1px solid #e7ebf1}
+.overseas-agency-brand{display:flex;align-items:center;gap:10px;color:#25344a;text-decoration:none}.overseas-agency-mark{display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:linear-gradient(145deg,#1c8de0,#176fc1);color:#fff;font-size:20px;font-weight:800}.overseas-agency-brand>span:last-child{display:grid;gap:3px}.overseas-agency-brand strong{font-size:14px}.overseas-agency-brand small{font-size:9px;color:#8993a3}.overseas-account-meta{display:flex;align-items:center;gap:24px}.overseas-account-meta>span{display:grid;gap:4px}.overseas-account-meta>span small{color:#929bab;font-size:8px;font-weight:700;letter-spacing:.7px}.overseas-account-meta>span strong{color:#344258;font-size:10px}.overseas-account-menu-wrap{position:relative}.overseas-account-menu-button{padding:9px 11px;border:1px solid #dce3ec;border-radius:6px;background:#fff;color:#42536a;font-size:9px;font-weight:700}.overseas-account-menu{position:absolute;z-index:5;top:calc(100% + 6px);right:0;min-width:170px;display:grid;padding:6px;border:1px solid #e1e6ed;border-radius:8px;background:#fff;box-shadow:0 12px 30px #24334a1c}.overseas-account-menu span,.overseas-account-menu button{padding:9px 10px;border:0;border-radius:5px;background:#fff;text-align:left;color:#536176;font-size:9px}.overseas-account-menu button{border-top:1px solid #edf0f4;border-radius:0;color:#b2474b}.overseas-account-menu span:hover,.overseas-account-menu button:hover{background:#f4f7fb}
+.overseas-board-hero{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:27px clamp(18px,4.5vw,66px);background:linear-gradient(115deg,#1977c6,#2e9dde 57%,#4e7fd2);color:#fff}.overseas-board-hero .eyebrow{margin:0 0 7px;color:#d7ecff;font-size:8px;font-weight:800;letter-spacing:1px}.overseas-board-hero h1{margin:0;font-size:clamp(23px,3vw,32px);letter-spacing:-.5px}.overseas-board-hero p:last-child{margin:7px 0 0;color:#e0efff;font-size:10px;line-height:1.5}.overseas-view-toggle{display:flex;flex:none;padding:4px;border:1px solid #ffffff50;border-radius:8px;background:#ffffff1c}.overseas-view-toggle button{padding:9px 13px;border:0;border-radius:5px;background:transparent;color:#fff;font-size:9px;font-weight:700;white-space:nowrap}.overseas-view-toggle button.active{background:#fff;color:#176fc1;box-shadow:0 2px 6px #174f8b2e}
+.overseas-module-nav{display:flex;gap:5px;overflow-x:auto;padding:0 clamp(18px,4.5vw,66px);background:#fff;border-bottom:1px solid #e6eaf0}.overseas-module-nav button{position:relative;flex:none;padding:15px 13px;border:0;background:transparent;color:#718096;font-size:10px;font-weight:700;white-space:nowrap}.overseas-module-nav button.active{color:#176fc1}.overseas-module-nav button.active::after{content:'';position:absolute;right:10px;bottom:0;left:10px;height:3px;border-radius:3px 3px 0 0;background:#197ac8}.overseas-module-content{max-width:1480px;margin:0 auto;padding:27px clamp(18px,4.5vw,66px) 42px}.overseas-dashboard-heading,.overseas-section-header,.overseas-applicant-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px}.overseas-dashboard-heading .eyebrow,.overseas-section-header .eyebrow,.overseas-applicant-heading .eyebrow{margin:0 0 6px;color:#3181be;font-size:8px;font-weight:800;letter-spacing:.9px}.overseas-dashboard-heading h2,.overseas-section-header h2,.overseas-applicant-heading h2{margin:0;color:#27374c;font-size:21px;letter-spacing:-.3px}.overseas-dashboard-heading p:last-child,.overseas-section-header p:last-child,.overseas-applicant-heading p:last-child{margin:6px 0 0;color:#7e899a;font-size:10px}.overseas-primary-button{border:0;border-radius:6px;background:#ef8128;color:#fff;padding:10px 14px;font-size:10px;font-weight:800;box-shadow:0 3px 8px #d8772926}.overseas-primary-button:hover{background:#d86d19}.overseas-primary-button:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}.overseas-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:18px}.overseas-kpis article{display:grid;grid-template-columns:47px 1fr;grid-template-rows:auto auto auto;column-gap:13px;align-items:center;padding:17px;background:#fff;border:1px solid #e5e9ef;border-radius:9px;box-shadow:0 3px 12px #20304b08}.overseas-kpi-icon{grid-row:span 3;display:grid;place-items:center;width:45px;height:45px;border-radius:11px;background:#e8f3fd;color:#1878c1;font-size:22px}.unprocessed-kpi .overseas-kpi-icon{background:#fff2e6;color:#e47a21}.overseas-kpis small{color:#718096;font-size:9px;font-weight:700}.overseas-kpis strong{color:#28384e;font-size:25px;line-height:1.2}.overseas-kpis article>span:last-child{color:#98a2b0;font-size:8px}.overseas-quick-actions,.overseas-panel-card{padding:17px;background:#fff;border:1px solid #e5e9ef;border-radius:9px;box-shadow:0 3px 12px #20304b08}.overseas-quick-actions{margin-bottom:16px}.overseas-quick-actions h3,.overseas-panel-heading h3{margin:0;color:#344258;font-size:12px}.overseas-quick-actions>div{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}.overseas-quick-actions button{min-height:42px;border:1px solid #e4e9f0;border-radius:6px;background:#fff;color:#43607e;font-size:9px;font-weight:700}.overseas-quick-actions button:hover{border-color:#99c8ec;background:#f4faff;color:#176fc1}.overseas-dashboard-columns{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:14px}.overseas-panel-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.overseas-panel-heading p{margin:5px 0 0;color:#929bab;font-size:8px}.overseas-panel-heading>button{border:0;background:transparent;color:#1978c2;font-size:9px;font-weight:700}.overseas-announcements .overseas-panel-heading>span{padding:5px 7px;border-radius:4px;background:#edf5fd;color:#327bb6;font-size:7px;font-weight:800}.overseas-announcements article{padding:11px 0;border-top:1px solid #edf0f4}.overseas-announcements article strong{font-size:9px;color:#42516a}.overseas-announcements article p{margin:5px 0;color:#7f8999;font-size:8px;line-height:1.5}.overseas-announcements article small{color:#a1a9b5;font-size:7px}.overseas-empty-note,.overseas-empty-state{padding:20px;text-align:center;color:#8a95a4;font-size:10px}.overseas-job-card{display:flex;align-items:center;gap:11px;padding:12px 0;border-top:1px solid #edf0f4}.overseas-job-card-icon{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:9px;background:#edf5fc;color:#2581c3;font-size:17px}.overseas-job-card-copy{flex:1;min-width:0}.overseas-job-card-copy>div{display:flex;gap:7px;align-items:center}.overseas-status-pill{padding:4px 6px;border-radius:10px;background:#e9f7ef;color:#34845a;font-size:7px;font-weight:800}.overseas-jo-number{font-size:7px;color:#939dac}.overseas-job-card h3{margin:5px 0 3px;color:#344258;font-size:11px}.overseas-job-card p,.overseas-job-card small{margin:0;color:#7d899a;font-size:8px;line-height:1.5}.overseas-job-card>button{border:1px solid #dbe5ef;border-radius:5px;background:#fff;color:#357eb4;padding:7px 10px;font-size:8px;font-weight:700}.overseas-section-header{margin-bottom:16px}.overseas-section-header>button:not(.overseas-primary-button){padding:9px 12px;border:1px solid #cfe0ef;border-radius:6px;background:#fff;color:#347daf;font-size:9px;font-weight:700}.overseas-compliance-note,.overseas-demo-callout{padding:11px 13px;border-left:3px solid #ec8b36;border-radius:5px;background:#fff8ef;color:#857761;font-size:9px;line-height:1.55}.overseas-folder-tabs{display:flex;gap:5px;overflow-x:auto;padding:7px;margin-bottom:12px;border:1px solid #e4e9ef;border-radius:8px;background:#fff}.overseas-folder-tabs button{display:flex;align-items:center;gap:6px;flex:none;padding:8px 10px;border:0;border-radius:5px;background:transparent;color:#728094;font-size:8px;font-weight:700;white-space:nowrap}.overseas-folder-tabs button span{display:grid;place-items:center;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#f0f3f7;color:#748195;font-size:7px}.overseas-folder-tabs button.active{background:#eaf4fc;color:#176fc1}.overseas-folder-tabs button.active span{background:#cfe7f9;color:#176fc1}.overseas-bulk-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;padding:10px 12px;border:1px solid #e3e8ef;border-radius:7px;background:#fff}.overseas-bulk-toolbar label{display:flex;align-items:center;gap:6px;color:#627188;font-size:8px}.overseas-bulk-toolbar>span{margin-right:auto;color:#8994a3;font-size:8px}.overseas-bulk-toolbar select{height:30px;border:1px solid #dfe5ed;border-radius:5px;background:#fff;padding:0 7px;font-size:8px}.overseas-bulk-toolbar button{border:0;border-radius:5px;background:#258751;color:white;padding:8px 13px;font-size:8px;font-weight:700}.overseas-bulk-toolbar button:disabled{opacity:.45}.overseas-applicant-table-wrap{overflow:auto;border:1px solid #e3e8ef;border-radius:8px;background:#fff}.overseas-applicant-table{width:100%;min-width:920px;border-collapse:collapse}.overseas-applicant-table th,.overseas-applicant-table td{padding:10px 9px;border-bottom:1px solid #edf0f4;text-align:left;color:#536176;font-size:8px;vertical-align:middle}.overseas-applicant-table th{background:#f7f9fc;color:#738096;font-size:8px}.overseas-applicant-table td>button:not(.overseas-move-button){border:0;background:none;padding:0;color:#2778b5;font-size:8px;font-weight:700}.overseas-applicant-table td small{display:block;margin-top:4px;color:#99a1ad;font-size:7px}.overseas-applicant-table td input[type=text],.overseas-applicant-table td select{width:100%;min-width:105px;height:29px;border:1px solid #e0e6ee;border-radius:4px;padding:0 6px;background:#fff;color:#556276;font-size:8px}.overseas-move-button{width:30px;height:30px;border:0;border-radius:6px;background:#28a05b;color:#fff;font-size:17px}.overseas-table-empty{text-align:center!important;padding:28px!important;color:#8b95a3!important}.overseas-pipeline-note{color:#8e98a6;font-size:8px}.overseas-applicant-detail{margin-top:15px;padding:17px;border:1px solid #dfe7ef;border-radius:8px;background:white}.overseas-applicant-detail h3{font-size:15px}.overseas-applicant-detail p,.overseas-applicant-detail label{font-size:9px;color:#69768a}.overseas-applicant-detail textarea{display:block;width:100%;margin:7px 0;padding:9px;border:1px solid #dfe5ed;border-radius:5px}.overseas-applicant-detail>button{margin-right:8px;border:1px solid #dce4ed;border-radius:5px;padding:7px;background:#fff;color:#3979ab;font-size:8px}.overseas-email-modal,.overseas-job-form-backdrop{position:fixed;inset:0;z-index:32;display:grid;place-items:center;padding:16px;background:#16253c85}.overseas-email-modal form,.overseas-job-form{position:relative;width:min(100%,560px);max-height:92vh;overflow:auto;padding:25px;background:#fff;border-radius:11px;box-shadow:0 20px 70px #17263d40}.overseas-email-modal h3{margin:4px 0;font-size:18px}.overseas-email-modal form>p:not(.eyebrow){font-size:9px;color:#788497}.overseas-email-modal label,.overseas-billing-form>label{display:grid;gap:6px;margin:12px 0;color:#58677d;font-size:9px;font-weight:700}.overseas-email-modal input,.overseas-email-modal textarea,.overseas-billing-form input{width:100%;border:1px solid #dfe5ed;border-radius:5px;padding:9px;background:#fff;color:#39485e;font-size:10px}.overseas-email-modal textarea{resize:vertical}.overseas-email-modal [data-email-confirmation],.overseas-billing-form [data-billing-status]{color:#278353;font-size:9px}.overseas-modal-close{position:absolute;top:12px;right:12px;width:29px;height:29px;border:0;border-radius:50%;background:#f0f3f7;color:#566377;font-size:18px}.overseas-job-form{width:min(100%,850px);padding:27px}.overseas-job-form h2{margin:3px 0;color:#26364c;font-size:21px}.overseas-form-note{color:#9a7957;font-size:9px}.overseas-job-form .eyebrow{margin:0;color:#2580bc;font-size:8px;font-weight:800;letter-spacing:.8px}.overseas-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 13px}.overseas-job-form label{display:grid;gap:6px;margin:9px 0;color:#536176;font-size:9px;font-weight:700}.overseas-job-form input:not([type=checkbox]),.overseas-job-form select,.overseas-job-form textarea{width:100%;min-height:36px;border:1px solid #dfe5ed;border-radius:5px;padding:8px;color:#37465a;background:#fff;font-size:9px;font-weight:400}.overseas-job-form textarea{resize:vertical}.overseas-job-form input:focus,.overseas-job-form select:focus,.overseas-job-form textarea:focus{outline:2px solid #d5eafa;border-color:#65a8d7}.overseas-conditional-fields{margin:10px 0;padding:12px;border:1px solid #f0dabc;border-radius:7px;background:#fffaf2;color:#7c674e;font-size:9px}.overseas-conditional-fields strong{display:block;margin-bottom:8px}.overseas-conditional-fields label{display:inline-flex;align-items:center;margin:5px 15px 5px 0}.overseas-conditional-fields small{display:block;color:#988b77;font-size:8px}.overseas-qualification-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 10px;margin:12px 0;padding:10px;border:1px solid #dfe8f0;border-radius:7px}.overseas-qualification-fields legend{padding:0 5px;color:#54647a;font-size:8px;font-weight:700}.overseas-qualification-fields label{margin:5px 0}.overseas-qualification-fields textarea{min-height:80px}.overseas-form-step-label{padding-top:13px;border-top:1px solid #ebeff4}.overseas-attestation{display:flex!important;align-items:flex-start;gap:9px;padding:11px;border:1px solid #f0d8b9;border-radius:6px;background:#fffaf2;line-height:1.5}.overseas-attestation input{flex:none;margin-top:2px;accent-color:#2583c3}.overseas-form-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}.overseas-form-actions p{color:#bb4c4c;font-size:9px}.overseas-billing-form{max-width:700px;padding:20px;background:#fff;border:1px solid #e3e8ef;border-radius:9px}.overseas-billing-form .overseas-compliance-note{margin:14px 0}.overseas-inquiry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.overseas-inquiry-grid article{padding:16px;background:#fff;border:1px solid #e3e8ef;border-radius:8px}.overseas-inquiry-tag{color:#3380b7;font-size:8px;font-weight:700}.overseas-inquiry-grid h3{margin:9px 0 5px;color:#35435a;font-size:12px}.overseas-inquiry-grid p,.overseas-inquiry-grid small{color:#7e899a;font-size:9px;line-height:1.5}.overseas-inquiry-grid button{display:block;margin-top:12px;border:1px solid #d4e1ee;border-radius:5px;background:#fff;padding:7px 10px;color:#327bb1;font-size:8px;font-weight:700}.overseas-applicant-page{max-width:1480px;margin:0 auto;padding:30px clamp(18px,4.5vw,66px) 45px}.overseas-applicant-heading>span{padding:8px 10px;border:1px solid #dce6ef;border-radius:6px;background:#fff;color:#62728a;font-size:9px;font-weight:700}.overseas-opportunity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:13px}.overseas-opportunity-card{padding:16px;background:#fff;border:1px solid #e2e8ef;border-radius:9px;box-shadow:0 3px 12px #20304b08}.overseas-opportunity-top{display:flex;justify-content:space-between;color:#307db6;font-size:8px;font-weight:700}.overseas-opportunity-top small{padding:4px 6px;border-radius:10px;background:#e9f7ef;color:#388458}.overseas-opportunity-card h3{margin:10px 0 5px;color:#28384e;font-size:15px}.overseas-opportunity-card p{color:#7b8797;font-size:9px;line-height:1.6}.overseas-opportunity-card .overseas-opportunity-company{color:#52647b;font-weight:700}.overseas-opportunity-meta{display:grid;gap:6px;margin:13px 0;padding:10px 0;border-top:1px solid #edf0f4;border-bottom:1px solid #edf0f4;color:#6f7b8f;font-size:8px}.overseas-opportunity-card>button{width:100%;padding:9px;border:0;border-radius:5px;background:#ee8129;color:#fff;font-size:9px;font-weight:800}.overseas-opportunity-card>button:disabled{background:#e8edf2;color:#718094}.overseas-my-applications{margin-top:22px;padding:15px;background:#fff;border:1px solid #e3e8ef;border-radius:8px}.overseas-my-applications h3{margin:0 0 10px;font-size:12px}.overseas-my-applications p{display:flex;justify-content:space-between;padding:9px 0;border-top:1px solid #edf0f4;color:#526177;font-size:9px}.overseas-demo-callout{margin-top:18px;border-left-color:#2483c7;background:#edf6fd;color:#64798d}.overseas-board-footer{padding:13px 18px;border-top:1px solid #e4e9ef;background:#fff;text-align:center;color:#929bab;font-size:8px}
+@media(max-width:800px){#overseas-jobs-panel{width:calc(100vw - var(--sidebar))}.overseas-identity{align-items:flex-start;flex-direction:column}.overseas-account-meta{width:100%;justify-content:space-between;gap:8px}.overseas-board-hero{align-items:flex-start;flex-direction:column}.overseas-view-toggle{width:100%}.overseas-view-toggle button{flex:1}.overseas-dashboard-columns{grid-template-columns:1fr}.overseas-quick-actions>div{grid-template-columns:repeat(2,minmax(0,1fr))}.overseas-qualification-fields{grid-template-columns:1fr}.overseas-applicant-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.overseas-module-content,.overseas-applicant-page{padding:20px 13px 30px}.overseas-module-nav{padding:0 10px}.overseas-module-nav button{padding:13px 9px;font-size:9px}.overseas-dashboard-heading,.overseas-section-header{align-items:flex-start;flex-direction:column}.overseas-kpis{grid-template-columns:1fr}.overseas-quick-actions>div{grid-template-columns:1fr 1fr}.overseas-folder-tabs{margin-left:-4px;margin-right:-4px}.overseas-bulk-toolbar>span{margin-right:0}.overseas-job-form{padding:24px 16px}.overseas-form-grid{grid-template-columns:1fr}.overseas-form-actions{align-items:flex-start;flex-direction:column}.overseas-form-actions .overseas-primary-button{width:100%}.overseas-account-meta>span:nth-child(2){display:none}}
+.overseas-sourcing-toolbar{display:flex;align-items:end;gap:11px;flex-wrap:wrap;margin:12px 0;padding:13px;border:1px solid #e3e8ef;border-radius:8px;background:#fff}.overseas-sourcing-toolbar label{display:grid;gap:6px;color:#627188;font-size:8px;font-weight:700}.overseas-sourcing-toolbar label:first-child{flex:1;min-width:230px}.overseas-sourcing-toolbar input,.overseas-sourcing-toolbar select{height:35px;border:1px solid #dfe5ed;border-radius:5px;padding:0 9px;background:#fff;color:#41516a;font-size:9px}.overseas-sourcing-toolbar button{height:35px;padding:0 12px;border:0;border-radius:5px;background:#187bc3;color:#fff;font-size:9px;font-weight:700}.overseas-sourcing-count{color:#8b96a5;font-size:8px}.overseas-sourcing-results{display:grid;gap:10px}.overseas-sourcing-results article{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:start;padding:14px;background:#fff;border:1px solid #e2e8ef;border-radius:8px}.overseas-sourcing-avatar{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#e9f3fb;color:#287bb3;font-size:10px;font-weight:800}.overseas-sourcing-results h3{margin:0 0 4px;color:#344258;font-size:11px}.overseas-sourcing-results p{margin:4px 0;color:#758195;font-size:8px;line-height:1.5}.overseas-source-skills{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}.overseas-source-skills span{padding:4px 6px;border-radius:10px;background:#eef4fa;color:#57718a;font-size:7px}.overseas-sourcing-results section>small{color:#929bab;font-size:7px}.overseas-sourcing-results details{margin-top:8px;color:#4c7da2;font-size:8px}.overseas-sourcing-results details p{margin:6px 0}.overseas-sourcing-results article>button{padding:7px 9px;border:1px solid #d4e4f1;border-radius:5px;background:#f7fbff;color:#2678b4;font-size:8px;font-weight:700;white-space:nowrap}
+@media(max-width:600px){.overseas-sourcing-results article{grid-template-columns:30px minmax(0,1fr)}.overseas-sourcing-results article>button{grid-column:2;justify-self:start}.overseas-sourcing-toolbar,.overseas-sourcing-toolbar label,.overseas-sourcing-toolbar input,.overseas-sourcing-toolbar select{width:100%;min-width:0}}
+@media(prefers-reduced-motion:reduce){.overseas-workspace *{scroll-behavior:auto!important}}
+
+#jobboard-view .board-banner[hidden],#local-jobs-panel[hidden]{display:none!important}
+#jobboard-view .board-content.overseas-board-content{width:100%;max-width:none;margin:0;padding:0}
+/* Applicant view: place the warm animated hero first and highlight job actions. */
+.overseas-workspace.applicant-mode .overseas-identity{display:none}
+.overseas-workspace.applicant-mode .overseas-board-hero{
+  background:linear-gradient(115deg,#fff0cf 0%,#ffe1b7 35%,#fff5c9 68%,#ffdfb5 100%);
+  background-size:300% 300%;
+  color:#493342;
+  animation:overseas-applicant-gradient 13s ease-in-out infinite;
+}
+.overseas-workspace.applicant-mode .overseas-board-hero .eyebrow,
+.overseas-workspace.applicant-mode .overseas-board-hero p:last-child{color:#725943}
+.overseas-workspace.applicant-mode .overseas-board-hero h1{color:#493342}
+.overseas-workspace.applicant-mode .overseas-view-toggle{border-color:#b5005e40;background:#ffffff70}
+.overseas-workspace.applicant-mode .overseas-view-toggle button{color:#8d245a}
+.overseas-workspace.applicant-mode .overseas-view-toggle button.active{background:#fff;color:#b5005e}
+.overseas-workspace.applicant-mode .overseas-opportunity-card>button:not(:disabled),
+.overseas-workspace.applicant-mode .overseas-primary-button{
+  background:#d41478;
+  color:#fff;
+  box-shadow:0 3px 9px #b5005e30;
+}
+.overseas-workspace.applicant-mode .overseas-opportunity-card>button:not(:disabled):hover,
+.overseas-workspace.applicant-mode .overseas-primary-button:hover{background:#b5005e}
+@keyframes overseas-applicant-gradient{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@media(prefers-reduced-motion:reduce){
+  .overseas-workspace.applicant-mode .overseas-board-hero{animation:none}
+}
+.overseas-applicant-nav{display:flex;gap:6px;overflow-x:auto;margin:-8px 0 16px;padding:5px;border-bottom:1px solid #f0e4d9}
+.overseas-applicant-nav button{flex:none;padding:10px 13px;border:0;border-radius:7px;background:transparent;color:#756777;font-size:10px;font-weight:700;white-space:nowrap}
+.overseas-applicant-nav button.active{background:#fff0d9;color:#874900}
+.overseas-applicant-search{display:grid;grid-template-columns:minmax(180px,1.5fr) repeat(2,minmax(140px,.8fr)) auto auto;align-items:end;gap:10px;margin:14px 0;padding:13px;background:#fff;border:1px solid #f0e7df;border-radius:9px}
+.overseas-applicant-search label{display:grid;gap:6px;color:#655a63;font-size:9px;font-weight:700}
+.overseas-applicant-search input,.overseas-applicant-search select{width:100%;height:36px;border:1px solid #e7e0e5;border-radius:6px;padding:0 9px;background:#fff;color:#37465a;font-size:10px}
+.overseas-applicant-search>button{height:36px;padding:0 13px;border:0;border-radius:6px;background:#d41478;color:#fff;font-size:9px;font-weight:800;white-space:nowrap}
+.overseas-applicant-search>button.overseas-resume-link{border:1px solid #ebc7db;background:#fff;color:#a52b68}
+.overseas-discovery-layout{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr);gap:14px;align-items:start}
+.overseas-job-feed{display:grid;gap:9px;max-height:68vh;overflow:auto;padding-right:3px}
+.overseas-feed-heading{display:flex;justify-content:space-between;align-items:center;padding:4px 2px;color:#586477;font-size:9px}
+.overseas-feed-heading span{color:#9a8b96;font-size:8px}
+.overseas-applicant-job-card{position:relative;padding:13px 13px 12px;background:#fff;border:1px solid #e9e4e9;border-radius:9px;box-shadow:0 3px 10px #46223a08;cursor:pointer}
+.overseas-applicant-job-card.selected{border-color:#d41478;box-shadow:0 0 0 2px #d4147818}
+.overseas-applicant-job-card h3{margin:8px 0 4px;color:#28384e;font-size:13px}
+.overseas-applicant-job-card p{margin:4px 0;color:#758195;font-size:9px}
+.overseas-job-feed-meta{display:grid;gap:4px;margin-top:9px;color:#738096;font-size:8px}
+.overseas-bookmark-button{margin-top:10px;padding:5px 8px;border:1px solid #edd2e0;border-radius:5px;background:#fff8fc;color:#b5005e;font-size:8px;font-weight:700;cursor:pointer}
+.overseas-job-preview{position:sticky;top:12px;min-width:0}
+.overseas-applicant-detail-pane{padding:19px;background:#fff;border:1px solid #e9e4e9;border-radius:10px;box-shadow:0 4px 15px #46223a09}
+.overseas-applicant-detail-pane h2{margin:12px 0 5px;color:#28384e;font-size:21px}
+.overseas-applicant-detail-pane h3{margin:19px 0 7px;color:#344258;font-size:11px}
+.overseas-applicant-detail-pane>p{color:#758195;font-size:10px;line-height:1.6}
+.overseas-applicant-detail-meta{display:grid;gap:7px;margin:15px 0;padding:12px;border-block:1px solid #edf0f4;color:#667489;font-size:9px}
+.overseas-applicant-detail-pane ul{padding-left:18px;color:#687589;font-size:9px;line-height:1.7}
+.overseas-trust-details{margin-top:15px;padding:12px;border:1px solid #e5eee8;border-radius:7px;background:#f8fcf8}
+.overseas-trust-details h3{margin:0 0 8px}
+.overseas-trust-details p{margin:6px 0;color:#607267;font-size:8px;line-height:1.5}
+.overseas-no-fee-badge{display:inline-block;margin-top:5px;padding:5px 8px;border-radius:12px;background:#e6f6e9;color:#267445;font-size:8px;font-weight:800}
+.overseas-applicant-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}
+.overseas-applicant-actions button{min-height:35px;padding:0 12px;border:1px solid #e8c7d9;border-radius:6px;background:#fff;color:#a52b68;font-size:9px;font-weight:800}
+.overseas-applicant-actions button:first-child{flex:1;border:0;background:#d41478;color:#fff}
+.overseas-applicant-actions button:first-child:disabled{background:#e8edf2;color:#718094}
+.overseas-share-message{min-height:12px;margin-bottom:0}
+.overseas-applications-view{padding:15px;background:#fff;border:1px solid #e9e4e9;border-radius:9px}
+.overseas-applications-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.overseas-applications-header h3{margin:0;color:#344258;font-size:13px}
+.overseas-applications-header p,.overseas-applications-header span{color:#8993a2;font-size:9px}
+.overseas-applications-header p{margin:5px 0 0}
+.overseas-application-table{display:grid}
+.overseas-application-row{display:grid;grid-template-columns:1.5fr .8fr .7fr .8fr;gap:10px;align-items:center;padding:11px 8px;border-top:1px solid #edf0f4;color:#647187;font-size:9px}
+.overseas-application-row>div{display:grid;gap:4px}
+.overseas-application-row>div strong{color:#344258}
+.overseas-application-row>div span{color:#8b95a4}
+.overseas-application-row-head{color:#778397;font-size:8px}
+.overseas-app-status{justify-self:start;padding:5px 7px;border-radius:12px;background:#fff1dc;color:#8a5c12;font-size:8px;font-weight:700}
+@media(max-width:850px){.overseas-applicant-search{grid-template-columns:repeat(2,minmax(0,1fr))}.overseas-applicant-search label:first-child{grid-column:1/-1}.overseas-discovery-layout{grid-template-columns:1fr}.overseas-job-feed{max-height:none;overflow:visible}.overseas-job-preview{position:static}}
+@media(max-width:600px){.overseas-applicant-search{grid-template-columns:1fr}.overseas-applicant-search label:first-child{grid-column:auto}.overseas-applicant-search>button{width:100%}.overseas-application-row{grid-template-columns:1fr 1fr}.overseas-application-row-head{display:none}.overseas-applicant-detail-pane{padding:15px}}
+
+/* Overseas banner: full-bleed animated color, inline brand, and drifting icons. */
+.overseas-workspace .overseas-board-hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:176px;
+  background:linear-gradient(115deg,#ffb86b,#ffd36a,#ff8fb1,#9b8bff,#70d8d0,#ffb86b);
+  background-size:350% 350%;
+  animation:overseas-spectrum-drift 18s ease-in-out infinite;
+}
+.overseas-workspace .overseas-hero-copy,
+.overseas-workspace .overseas-view-toggle{position:relative;z-index:2}
+.overseas-hero-brand{display:inline-flex;align-items:center;gap:9px;margin-bottom:12px;color:#fff;text-decoration:none;text-shadow:0 1px 8px #502b6340}
+.overseas-hero-brand .overseas-agency-mark{width:34px;height:34px;border:1px solid #ffffff80;border-radius:10px;background:#ffffff35;color:#fff;box-shadow:0 3px 12px #55305a20}
+.overseas-hero-brand>span:last-child{display:grid;gap:2px}
+.overseas-hero-brand strong{font-size:13px}
+.overseas-hero-brand small{font-size:9px;color:#fffF}
+.overseas-workspace .overseas-board-hero .eyebrow,
+.overseas-workspace .overseas-board-hero p:last-child{color:#fff;text-shadow:0 1px 7px #5c315038}
+.overseas-workspace .overseas-board-hero h1{color:#fff;text-shadow:0 2px 12px #5c31504d}
+.overseas-hero-icons{position:absolute;inset:0;z-index:1;pointer-events:none}
+.overseas-hero-icons span{position:absolute;display:grid;place-items:center;width:38px;height:38px;border:1px solid #ffffff70;border-radius:50%;background:#ffffff24;color:#fff;font-size:20px;text-shadow:0 2px 8px #56305a40;box-shadow:0 5px 16px #51335a18;animation:overseas-icon-float 5s ease-in-out infinite}
+.overseas-hero-icons span:nth-child(1){top:18%;left:54%;font-size:23px;animation-delay:-1s}
+.overseas-hero-icons span:nth-child(2){top:63%;left:67%;width:29px;height:29px;animation-delay:-3s}
+.overseas-hero-icons span:nth-child(3){top:15%;left:79%;width:33px;height:33px;animation-delay:-2s}
+.overseas-hero-icons span:nth-child(4){top:68%;left:88%;width:25px;height:25px;animation-delay:-4s}
+@keyframes overseas-spectrum-drift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes overseas-icon-float{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-12px) rotate(8deg)}}
+.overseas-workspace.applicant-mode .overseas-board-hero{margin:0;border-radius:0}
+@media(max-width:700px){.overseas-workspace .overseas-board-hero{min-height:195px}.overseas-hero-icons span:nth-child(1){left:72%;top:18%}.overseas-hero-icons span:nth-child(2){left:84%;top:62%}.overseas-hero-icons span:nth-child(3){left:auto;right:8%;top:36%}.overseas-hero-icons span:nth-child(4){display:none}}
+@media(prefers-reduced-motion:reduce){.overseas-workspace .overseas-board-hero{animation:none}.overseas-hero-icons span{animation:none}}
+.overseas-workspace.applicant-mode .overseas-board-hero{background:linear-gradient(115deg,#ffb86b,#ffd36a,#ff8fb1,#9b8bff,#70d8d0,#ffb86b);background-size:350% 350%;animation:overseas-spectrum-drift 18s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.overseas-workspace.applicant-mode .overseas-board-hero{animation:none}}
+/* Keep Local Job Board content inset while the banner remains full-bleed. */
+#jobboard-view .board-content:not(.overseas-board-content),
+#jobboard-view .board-content.overseas-board-content{
+  width:calc(100% - 2 * clamp(18px,4.5vw,66px));
+  max-width:none;
+  margin:0 auto;
+  padding:32px 0 50px;
+}
+@media(max-width:700px){
+  #jobboard-view .board-content:not(.overseas-board-content),
+  #jobboard-view .board-content.overseas-board-content{
+    width:calc(100% - 28px);
+    padding:25px 0 35px;
+  }
+}
+/* Local job-board search banner: lively colors with a calm, readable surface. */
+#jobboard-view .board-banner{
+  background:linear-gradient(115deg,#ffe4ee 0%,#fff0c9 24%,#dff8f4 50%,#e8e3ff 76%,#ffe4ee 100%);
+  background-size:350% 350%;
+  animation:local-board-gradient 17s ease-in-out infinite;
+}
+#jobboard-view .board-topline,#jobboard-view .board-hero{position:relative;z-index:2}
+#jobboard-view .board-banner-icons{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+#jobboard-view .board-banner-icons span{position:absolute;display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffffc9;border-radius:50%;background:#ffffff80;color:#bd347c;font-size:24px;box-shadow:0 7px 20px #77436116;animation:local-board-icon-float 5.5s ease-in-out infinite}
+#jobboard-view .board-banner-icons span:nth-child(1){top:20%;left:8%;animation-delay:-1s}
+#jobboard-view .board-banner-icons span:nth-child(2){top:72%;left:15%;width:34px;height:34px;color:#347daf;animation-delay:-3s}
+#jobboard-view .board-banner-icons span:nth-child(3){top:15%;right:16%;width:32px;height:32px;color:#9a6b12;animation-delay:-2s}
+#jobboard-view .board-banner-icons span:nth-child(4){top:68%;right:8%;color:#32876d;animation-delay:-4s}
+#jobboard-view .recruiting-illustration{z-index:1;animation:local-board-art-float 7s ease-in-out infinite}
+@keyframes local-board-gradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes local-board-icon-float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-11px) rotate(8deg)}}
+@keyframes local-board-art-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media(max-width:700px){#jobboard-view .board-banner-icons span:nth-child(1){left:4%;top:16%}#jobboard-view .board-banner-icons span:nth-child(2){left:5%;top:78%}#jobboard-view .board-banner-icons span:nth-child(3){right:7%;top:12%}#jobboard-view .board-banner-icons span:nth-child(4){right:5%;top:75%}}
+@media(prefers-reduced-motion:reduce){#jobboard-view .board-banner,#jobboard-view .board-banner-icons span,#jobboard-view .recruiting-illustration{animation:none}}
+.overseas-workspace.applicant-mode .overseas-board-hero .eyebrow,
+.overseas-workspace.applicant-mode .overseas-board-hero p:last-child{color:#fff;text-shadow:0 1px 7px #5c315038}
+.overseas-workspace.applicant-mode .overseas-board-hero h1{color:#fff;text-shadow:0 2px 12px #5c31504d}
+
+/* Keep overseas recruiter actions blue and applicant actions calm, not fuchsia. */
+.overseas-workspace.applicant-mode .overseas-view-toggle button.active{color:#176fc1}
+.overseas-workspace.applicant-mode .overseas-opportunity-card>button:not(:disabled),
+.overseas-workspace.applicant-mode .overseas-primary-button,
+.overseas-workspace.applicant-mode .overseas-applicant-search>button,
+.overseas-workspace.applicant-mode .overseas-applicant-actions button:first-child{background:#2879ad;color:#fff;box-shadow:0 3px 9px #1d527326}
+.overseas-workspace.applicant-mode .overseas-opportunity-card>button:not(:disabled):hover,
+.overseas-workspace.applicant-mode .overseas-primary-button:hover,
+.overseas-workspace.applicant-mode .overseas-applicant-search>button:hover,
+.overseas-workspace.applicant-mode .overseas-applicant-actions button:first-child:hover{background:#1f638f}
+.overseas-workspace.applicant-mode .overseas-discovery-switch button.active{background:#2879ad;box-shadow:0 3px 9px #1d527326}
+.overseas-workspace.applicant-mode .overseas-applicant-actions button:not(:first-child),
+.overseas-workspace.applicant-mode .overseas-applicant-search>button.overseas-resume-link{border-color:#cbdce9;color:#286f9e}
+.overseas-workspace.applicant-mode .overseas-bookmark-button{border-color:#d6e3ec;background:#f7fafc;color:#286f9e}
+.overseas-workspace.applicant-mode .overseas-country-card:hover,
+.overseas-workspace.applicant-mode .overseas-country-card.selected,
+.overseas-workspace.applicant-mode .overseas-country-list button:hover,
+.overseas-workspace.applicant-mode .overseas-country-list button.active{border-color:#78aaca}
+.overseas-workspace.applicant-mode .overseas-country-list button strong,
+.overseas-workspace.applicant-mode .overseas-country-list button>span:last-child{color:#2879ad}
+@media(max-width:700px){#jobboard-view .board-intro-actions .local-applicant-toggle{margin-left:auto!important}}
+
+/* Match Local Job Board side gutters while leaving the hero full-bleed. */
+.overseas-module-content,
+.overseas-applicant-page{
+  width:auto;
+  max-width:none;
+  margin-right:clamp(18px,4.5vw,66px);
+  margin-left:clamp(18px,4.5vw,66px);
+  padding-right:0;
+  padding-left:0;
+}
+@media(max-width:700px){
+  .overseas-module-content,
+  .overseas-applicant-page{margin-right:14px;margin-left:14px}
+  .overseas-module-content{padding-top:25px;padding-bottom:35px}
+}
+@media(max-width:600px){
+  .overseas-module-content{padding-right:0;padding-left:0}
+  .overseas-applicant-page{padding-right:0;padding-left:0}
+}
+/* Keep the Overseas banner flush with the top edge of its full-width board area. */
+#jobboard-view .board-content.overseas-board-content{padding-top:0!important}
+#overseas-jobs-panel,.overseas-workspace .overseas-board-hero{margin-top:0!important;border-radius:0}
